@@ -1,0 +1,33 @@
+extends inc/layout
+
+block variables
+  - var rootdir = './'
+
+block content
+  .container
+    .clear
+    .inner
+
+      .logo
+        .daffodil DAFFODIL
+        .digital digital
+        .soon COMING SOON
+
+      .contact
+        a.email(href='mailto:hello@daffodildigital.com') GET IN TOUCH
+        .socials
+          a.social.twitter(href='https://twitter.com/daffodildigital')
+            include ../pub/svg/twitter.svg
+          a.social.instagram(href='https://instagram.com/daffodildigital/')
+            include ../pub/svg/instagram.svg
+          a.social.facebook(href='https://www.facebook.com/daffodildigital/')
+            include ../pub/svg/facebook.svg
+
+
+
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('./jst/index.js', 'Index');
+      //Global.i()
+    }
+

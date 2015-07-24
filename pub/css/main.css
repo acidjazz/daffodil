@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'gotham-book';
+  src: url("fnt/gotham-book.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'atc-rosemary-regular';
+  src: url("fnt/atc-rosemary-regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'luxus-brut';
+  src: url("fnt/luxus-brut.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: gotham-book;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bike.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+.container > .inner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #f8ead7;
+  padding: 20px;
+  margin: 40px;
+}
+.container > .inner > .logo {
+  float: left;
+  color: #fff;
+  margin: 40px 0 0 80px;
+  text-align: center;
+}
+.container > .inner > .logo > .daffodil {
+  font-size: 64px;
+  font-family: atc-rosemary-regular;
+}
+.container > .inner > .logo > .digital {
+  font-size: 128px;
+  line-height: 64px;
+  font-family: luxus-brut;
+}
+.container > .inner > .logo > .soon {
+  font-size: 24px;
+  text-align: right;
+  margin: 20px 0 0;
+}
+.container > .inner > .contact {
+  float: right;
+  margin: 40px 80px 0 0;
+}
+.container > .inner > .contact > .email {
+  color: #fff;
+  display: block;
+  border: 2px solid #f8ead7;
+  padding: 20px 40px;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.container > .inner > .contact > .email:hover {
+  background-color: rgba(248,234,215,0.5);
+}
+.container > .inner > .contact > .socials {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.container > .inner > .contact > .socials > .social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(128,128,128,0.5);
+  margin: 0 10px;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.container > .inner > .contact > .socials > .social:hover {
+  background-color: #808080;
+}
+.container > .inner > .contact > .socials > .social > svg {
+  width: inherit;
+  height: inherit;
+}
+.container > .inner > .contact > .socials > .social > svg > path,
+.container > .inner > .contact > .socials > .social > svg > g > path,
+.container > .inner > .contact > .socials > .social > svg > g > g > path {
+  fill: #f8ead7;
+}
+@media all and (min-width: 1px) and (max-width: 1100px) {
+  .container > .inner {
+    margin: 20px;
+    padding: 10px;
+  }
+  .container > .inner > .logo {
+    float: none;
+    margin: 10px;
+  }
+  .container > .inner > .logo > .daffodil {
+    font-size: 32px;
+  }
+  .container > .inner > .logo > .digital {
+    font-size: 64px;
+    line-height: 32px;
+  }
+  .container > .inner > .logo > .soon {
+    font-size: 16px;
+  }
+  .container > .inner > .contact {
+    float: none;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 0;
+    width: 90%;
+  }
+  .container > .inner > .contact > .email {
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(128,128,128,0.5);
+  }
+}
