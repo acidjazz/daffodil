@@ -4,4 +4,4 @@
 
 Helping brands tell their stories in smarter ways
 
-![logo](pub/img/logo_transparent.png =300x)
+<img src="pub/img/logo_transparent.png" width="300" height="300">
