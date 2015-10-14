@@ -1,1 +1,265 @@
-undefined
+.guide {
+  padding: 50px 0 0 0;
+  background-color: #f7eeea;
+}
+.guide > .title {
+  font: 64px atc-rosemary regular;
+  padding: 0 0 0 50px;
+  text-transform: uppercase;
+}
+.guide > .sections {
+  padding: 20px;
+}
+.guide > .sections > .section {
+  width: 33%;
+  float: left;
+}
+.guide > .sections > .section > .color {
+  padding: 10px 20px;
+  margin: 5px;
+}
+.guide > .sections > .section > .color.color_black1 {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_white1 {
+  background-color: #f7eeea;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_grey1 {
+  background-color: ##7F7773;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_tan1 {
+  background-color: #f8ead7;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_yellow1 {
+  background-color: ##EDE41F;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .font {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f7eeea;
+  overflow-x: scroll;
+  line-height: 50px !important;
+}
+.guide > .sections > .section > .font.font_f_copy {
+  font: 16px gotham book;
+}
+.guide > .sections > .section > .font.font_f_copy2 {
+  font: 24px gotham book;
+}
+.guide > .sections > .section > .font.font_f_h1 {
+  font: 128px luxus-brut regular;
+}
+.guide > .sections > .section > .font.font_f_h2 {
+  font: 64px atc-rosemary regular;
+}
+@font-face {
+  font-family: gotham blaq;
+  src: url("fnt/gotham/blaq.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham bold;
+  src: url("fnt/gotham/bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham book;
+  src: url("fnt/gotham/book.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham light;
+  src: url("fnt/gotham/light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham medium;
+  src: url("fnt/gotham/medium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham thin;
+  src: url("fnt/gotham/thin.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham ultra;
+  src: url("fnt/gotham/ultra.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham xlight;
+  src: url("fnt/gotham/xlight.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: atc-rosemary regular;
+  src: url("fnt/atc-rosemary/regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: luxus-brut regular;
+  src: url("fnt/luxus-brut/regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7eeea;
+  color: #000;
+  font: 16px gotham book;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bike.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+.container > .inner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #f8ead7;
+  padding: 20px;
+  margin: 40px;
+}
+.container > .inner > .logo {
+  float: left;
+  color: #fff;
+  margin: 40px 0 0 80px;
+  text-align: center;
+}
+.container > .inner > .logo > .daffodil {
+  font: 64px atc-rosemary regular;
+}
+.container > .inner > .logo > .digital {
+  font: 128px luxus-brut regular;
+  line-height: 64px;
+}
+.container > .inner > .logo > .soon {
+  font: 24px gotham book;
+  text-align: right;
+  margin: 20px 0 0;
+}
+.container > .inner > .contact {
+  float: right;
+  margin: 40px 80px 0 0;
+}
+.container > .inner > .contact > .email {
+  color: #f7eeea;
+  display: block;
+  border: 2px solid #f8ead7;
+  padding: 20px 40px;
+  font: 24px gotham book;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.container > .inner > .contact > .email:hover {
+  background-color: rgba(248,234,215,0.5);
+}
+.container > .inner > .contact > .socials {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.container > .inner > .contact > .socials > .social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(128,128,128,0.5);
+  margin: 0 10px;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.container > .inner > .contact > .socials > .social:hover {
+  background-color: #808080;
+}
+.container > .inner > .contact > .socials > .social > svg {
+  width: inherit;
+  height: inherit;
+}
+.container > .inner > .contact > .socials > .social > svg > path,
+.container > .inner > .contact > .socials > .social > svg > g > path,
+.container > .inner > .contact > .socials > .social > svg > g > g > path {
+  fill: #f8ead7;
+}
+@media all and (min-width: 1px) and (max-width: 1100px) {
+  .container > .inner {
+    margin: 20px;
+    padding: 10px;
+  }
+  .container > .inner > .logo {
+    float: none;
+    margin: 10px;
+  }
+  .container > .inner > .logo > .daffodil {
+    font-size: 32px;
+  }
+  .container > .inner > .logo > .digital {
+    font-size: 64px;
+    line-height: 32px;
+  }
+  .container > .inner > .logo > .soon {
+    font-size: 16px;
+  }
+  .container > .inner > .contact {
+    float: none;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 0;
+    width: 90%;
+  }
+  .container > .inner > .contact > .email {
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(128,128,128,0.5);
+  }
+}
