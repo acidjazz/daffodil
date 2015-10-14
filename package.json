@@ -1,0 +1,22 @@
+{
+  "name": "daffodil digital",
+  "version": "1.0.0",
+  "description": "daffodildigital.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acidjazz/daffodil"
+  },
+  "author": "Kevin Olson <acidjazz@gmail.com> (http://ke.vin.so/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acidjazz/daffodil/issues"
+  },
+  "homepage": "https://github.com/acidjazz/daffodil",
+  "dependencies": {
+    "luja": "git://github.com/acidjazz/luja.git"
+  }
+}

@@ -38,7 +38,7 @@
   margin: 5px;
   background-color: #f7eeea;
   overflow-x: scroll;
-  line-height: 50;
+  line-height: 50px !important;
 }
 .guide > .sections > .section > .font.font_f_copy {
   font: 16px gotham book;
