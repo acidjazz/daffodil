@@ -1,18 +1,114 @@
+.guide {
+  padding: 50px 0 0 0;
+  background-color: #f7eeea;
+}
+.guide > .title {
+  font: 64px atc-rosemary regular;
+  padding: 0 0 0 50px;
+  text-transform: uppercase;
+}
+.guide > .sections {
+  padding: 20px;
+}
+.guide > .sections > .section {
+  width: 33%;
+  float: left;
+}
+.guide > .sections > .section > .color {
+  padding: 10px 20px;
+  margin: 5px;
+}
+.guide > .sections > .section > .color.color_black1 {
+  background-color: #000;
+  border: 1px solid #f7eeea;
+  color: #f7eeea;
+}
+.guide > .sections > .section > .color.color_white1 {
+  background-color: #f7eeea;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_tan1 {
+  background-color: #f8ead7;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .font {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f7eeea;
+  overflow-x: scroll;
+  line-height: 50;
+}
+.guide > .sections > .section > .font.font_f_copy {
+  font: 16px gotham book;
+}
+.guide > .sections > .section > .font.font_f_copy2 {
+  font: 24px gotham book;
+}
+.guide > .sections > .section > .font.font_f_h1 {
+  font: 128px luxus-brut regular;
+}
+.guide > .sections > .section > .font.font_f_h2 {
+  font: 64px atc-rosemary regular;
+}
 @font-face {
-  font-family: 'gotham-book';
-  src: url("fnt/gotham-book.otf") format('opentype');
+  font-family: gotham blaq;
+  src: url("fnt/gotham/blaq.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'atc-rosemary-regular';
-  src: url("fnt/atc-rosemary-regular.otf") format('opentype');
+  font-family: gotham bold;
+  src: url("fnt/gotham/bold.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'luxus-brut';
-  src: url("fnt/luxus-brut.otf") format('opentype');
+  font-family: gotham book;
+  src: url("fnt/gotham/book.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham light;
+  src: url("fnt/gotham/light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham medium;
+  src: url("fnt/gotham/medium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham thin;
+  src: url("fnt/gotham/thin.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham ultra;
+  src: url("fnt/gotham/ultra.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham xlight;
+  src: url("fnt/gotham/xlight.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: atc-rosemary regular;
+  src: url("fnt/atc-rosemary/regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: luxus-brut regular;
+  src: url("fnt/luxus-brut/regular.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,8 +126,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-family: gotham-book;
+  background-color: #f7eeea;
+  color: #000;
+  font: 16px gotham book;
 }
 .container {
   width: 100%;
@@ -61,16 +158,14 @@ body {
   text-align: center;
 }
 .container > .inner > .logo > .daffodil {
-  font-size: 64px;
-  font-family: atc-rosemary-regular;
+  font: 64px atc-rosemary regular;
 }
 .container > .inner > .logo > .digital {
-  font-size: 128px;
+  font: 128px luxus-brut regular;
   line-height: 64px;
-  font-family: luxus-brut;
 }
 .container > .inner > .logo > .soon {
-  font-size: 24px;
+  font: 24px gotham book;
   text-align: right;
   margin: 20px 0 0;
 }
@@ -79,11 +174,11 @@ body {
   margin: 40px 80px 0 0;
 }
 .container > .inner > .contact > .email {
-  color: #fff;
+  color: #f7eeea;
   display: block;
   border: 2px solid #f8ead7;
   padding: 20px 40px;
-  font-size: 24px;
+  font: 24px gotham book;
   text-decoration: none;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;

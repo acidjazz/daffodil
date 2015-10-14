@@ -1,16 +1,16 @@
 
 vendor-prefixes ?= webkit moz o ms official
 
+c = {}
+for key, value in data.colors
+  c[key] = convert(value)
+
 // needed
+@import guide
 @import vendor
 @import mixins
-@import variables
 @import fonts
-
-// components
-// @import 'inc/*'
-
-tan1 = #f8ead7
+//@import /inc/*
 
 .clear
   clearfix()
@@ -18,102 +18,9 @@ tan1 = #f8ead7
 body
   margin 0
   padding 0
-  font-size 16px
-  font-family gotham-book
+  background-color: c.white1
+  color: c.black1
+  font f_copy
 
-.container
-  width 100%
-  height 100%
-  background url('../img/bike.jpg')
-  background-repeat no-repeat
-  background-size cover
-  background-position 50% 75%
-  > .inner
-    display block
-    position absolute
-    top 0
-    left 0
-    right 0
-    bottom 0
-    border 2px solid tan1
-    padding 20px
-    margin 40px
-
-    > .logo
-      float left
-      color white
-      margin 40px 0 0 80px
-      text-align center
-      > .daffodil
-        font-size 64px
-        font-family atc-rosemary-regular
-      > .digital
-        font-size 128px
-        line-height 64px
-        font-family luxus-brut
-      > .soon
-        font-size 24px
-        text-align right
-        margin 20px 0 0 
-
-    > .contact
-      float right
-      margin 40px 80px 0 0
-      > .email
-        color white
-        display block
-        border 2px solid tan1
-        padding 20px 40px
-        font-size 24px
-        text-decoration none
-        transition background-color 0.2s linear
-        &:hover
-          background-color rgba(tan1, 0.5)
-      > .socials
-        text-align center
-        margin 20px 0 0 0
-        > .social
-          display inline-block
-          width 30px
-          height 30px
-          background-color rgba(grey, 0.5)
-          margin 0 10px
-          padding 10px
-          border-radius 50%
-          transition background-color 0.2s linear
-          &:hover
-            background-color rgba(grey, 1)
-          > svg
-            width inherit
-            height inherit
-            > path, > g > path, > g > g > path
-              fill tan1
-
-// mobile
-@media all and (min-width: 1px) and (max-width: 1100px)
-  .container > .inner
-    margin 20px
-    padding 10px
-    > .logo
-      float none
-      margin 10px
-      > .daffodil
-        font-size 32px
-      > .digital
-        font-size 64px
-        line-height 32px
-      > .soon
-        font-size 16px
-    > .contact
-      float none
-      position absolute
-      bottom 10%
-      left 5%
-      right 0
-      width 90%
-      > .email
-        text-align center
-        font-size 16px
-        background-color rgba(grey, 0.5)
-
-
+// pages
+@import index
