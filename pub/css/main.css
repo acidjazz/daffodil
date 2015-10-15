@@ -20,8 +20,8 @@
 }
 .guide > .sections > .section > .color.color_black1 {
   background-color: #000;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #f7eeea;
+  color: #f7eeea;
 }
 .guide > .sections > .section > .color.color_white1 {
   background-color: #f7eeea;
@@ -29,9 +29,9 @@
   color: #000;
 }
 .guide > .sections > .section > .color.color_grey1 {
-  background-color: ##7F7773;
-  border: 1px solid #000;
-  color: #000;
+  background-color: #7f7773;
+  border: 1px solid #f7eeea;
+  color: #f7eeea;
 }
 .guide > .sections > .section > .color.color_tan1 {
   background-color: #f8ead7;
@@ -39,7 +39,7 @@
   color: #000;
 }
 .guide > .sections > .section > .color.color_yellow1 {
-  background-color: ##EDE41F;
+  background-color: #ede41f;
   border: 1px solid #000;
   color: #000;
 }
