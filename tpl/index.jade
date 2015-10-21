@@ -2,24 +2,18 @@ extends inc/layout
 
 block content
   .container
-    .clear
-    .inner
 
-      .logo
-        .daffodil DAFFODIL
-        .digital digital
-        .soon COMING SOON
+    .logo
+      .daffodil DAFFODIL
+      .digital digital
 
-      .contact
-        a.email(href='mailto:hello@daffodildigital.com') GET IN TOUCH
-        .socials
-          a.social.twitter(href='https://twitter.com/daffodildigital')
-            include ../pub/svg/twitter.svg
-          a.social.instagram(href='https://instagram.com/daffodildigital/')
-            include ../pub/svg/instagram.svg
-          a.social.facebook(href='https://www.facebook.com/daffodildigital/')
-            include ../pub/svg/facebook.svg
-
+    .menu
+      a.item.active(href='#home') home
+      a.item(href='#services') services
+      a.item(href='#portfolio') portfolio
+      a.item(href='#about') about
+      a.item(href='#contact') contact
+      .line
 
   script(type='text/javascript').
     function loadercomplete() {
