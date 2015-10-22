@@ -205,7 +205,7 @@ body {
   transition: color 0.1s linear;
 }
 .container > .menu > .item:hover {
-  background-color: #babd56;
+  color: #babd56;
 }
 .container > .menu > .item.active {
   color: #babd56;

@@ -22,8 +22,8 @@ Index =
 
     st = $(window).scrollTop()
 
-    Index.cache.tags.css 'transform', "translate(#{st/7}px, #{st/5}px) rotate(-#{st/20}deg)"
-    Index.cache.banner.css 'transform', "translate(0px, #{st/8}px)"
+    Index.cache.tags.css 'transform', "translate(#{st/10}px, #{st/8}px) rotate(-#{st/30}deg)"
+    Index.cache.banner.css 'transform', "translate(0px, #{st/12}px)"
 
     #console.log 'paralaxxxxin', st, st/10
 
