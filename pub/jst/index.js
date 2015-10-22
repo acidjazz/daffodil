@@ -17,6 +17,6 @@ Index = {
     var st;
     st = $(window).scrollTop();
     Index.cache.tags.css('transform', "translate(" + (st / 20) + "px, " + (st / 10) + "px) rotate(-" + (st / 60) + "deg)");
-    return Index.cache.banner.css('transform', "translate(0px, " + (st / 12) + "px)");
+    return Index.cache.banner.css('transform', "translate(0px, " + (st / 14) + "px)");
   }
 };
