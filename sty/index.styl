@@ -47,21 +47,25 @@
   > .banner
     position relative
     height 600px
-    background-position 50% 50%
-    background-size cover
-    background-repeat no-repeat
-    background-image url('/img/banner.jpg')
     overflow hidden
-    > .tags
-      // 510x604
-      width 250px
-      height 302px
-      background-image url('/img/tags.png')
-      background-size contain
-      position absolute
-      top 50%
-      left 50%
-      margin -125px 0 0 -151px
+    > .inner
+      overflow hidden
+      height 900px
+      margin -150px 0 0 0
+      background-position 50% 50%
+      background-size cover
+      background-repeat no-repeat
+      background-image url('/img/banner.jpg')
+      > .tags
+        // 510x604
+        width 250px
+        height 302px
+        background-image url('/img/tags.png')
+        background-size contain
+        position absolute
+        top 40%
+        left 50%
+        margin -125px 0 0 -151px
 
 // mobile
 // @media all and (min-width: 1px) and (max-width: 1000px)

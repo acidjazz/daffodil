@@ -5,8 +5,8 @@ Index =
 
   i: ->
 
-    Index.cache.banner = $ '.banner'
-    Index.cache.tags = $ '.tags'
+    Index.cache.banner = $ '.banner > .inner'
+    Index.cache.tags = $ '.banner > .inner > .tags'
     Index.cache.bcoords = Index.cache.banner[0].getBoundingClientRect()
 
     console.log Index.cache.bcoords
@@ -23,7 +23,7 @@ Index =
     st = $(window).scrollTop()
 
     Index.cache.tags.css 'transform', "translate(#{st/7}px, #{st/5}px) rotate(-#{st/20}deg)"
-    Index.cache.banner.css 'transform', "translate(0px, #{st/10}px)"
+    Index.cache.banner.css 'transform', "translate(0px, #{st/8}px)"
 
     #console.log 'paralaxxxxin', st, st/10
 

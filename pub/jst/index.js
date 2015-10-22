@@ -4,8 +4,8 @@ Index = {
   laxInterval: false,
   cache: {},
   i: function() {
-    Index.cache.banner = $('.banner');
-    Index.cache.tags = $('.tags');
+    Index.cache.banner = $('.banner > .inner');
+    Index.cache.tags = $('.banner > .inner > .tags');
     Index.cache.bcoords = Index.cache.banner[0].getBoundingClientRect();
     console.log(Index.cache.bcoords);
     console.log('Index.i()');
@@ -17,6 +17,6 @@ Index = {
     var st;
     st = $(window).scrollTop();
     Index.cache.tags.css('transform', "translate(" + (st / 7) + "px, " + (st / 5) + "px) rotate(-" + (st / 20) + "deg)");
-    return Index.cache.banner.css('transform', "translate(0px, " + (st / 10) + "px)");
+    return Index.cache.banner.css('transform', "translate(0px, " + (st / 8) + "px)");
   }
 };
