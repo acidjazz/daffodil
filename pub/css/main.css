@@ -73,6 +73,9 @@
 .guide > .sections > .section > .font.font_f_copy {
   font: 16px gotham book;
 }
+.guide > .sections > .section > .font.font_f_copyi {
+  font: 16px gotham bookitalic;
+}
 .guide > .sections > .section > .font.font_f_copy2 {
   font: 24px gotham book;
 }
@@ -100,6 +103,12 @@
 @font-face {
   font-family: gotham book;
   src: url("fnt/gotham/book.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: gotham bookitalic;
+  src: url("fnt/gotham/bookitalic.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -144,6 +153,115 @@
   src: url("fnt/luxus-brut/regular.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+.footer {
+  border-top: 2px solid #e4e5e6;
+}
+.footer > .section {
+  width: 33.333%;
+  float: left;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.footer > .section:nth-child(1) > .inner {
+  border-right: 2px solid #e4e5e6;
+}
+.footer > .section:nth-child(3) > .inner {
+  border-left: 2px solid #e4e5e6;
+}
+.footer > .section > .inner {
+  padding: 0px;
+  height: 100px;
+}
+.footer > .section > .inner > .title {
+  font: 16px gotham bookitalic;
+  text-transform: uppercase;
+}
+.footer > .section.section_follow > .inner > .socials {
+  padding: 20px 0 0 0;
+}
+.footer > .section.section_follow > .inner > .socials > .social {
+  display: inline-block;
+}
+.footer > .section.section_note > .inner > .email {
+  display: inline-block;
+  margin: 20px 0 0 0;
+}
+.footer > .section.section_d > .inner > .logo {
+  margin: auto;
+  background-image: url("/img/logo_transparent.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.header > .logo {
+  color: #babd56;
+  width: 348px;
+  text-align: center;
+  margin: auto;
+  padding: 0 0 60px 0;
+}
+.header > .logo > .daffodil {
+  font: 64px atc-rosemary regular;
+}
+.header > .logo > .digital {
+  font: 128px luxus-brut regular;
+  line-height: 64px;
+}
+.header > .menu {
+  text-align: center;
+}
+.header > .menu > .item {
+  display: inline-block;
+  cursor: pointer;
+  font: 24px atc-rosemary regular;
+  text-transform: uppercase;
+  color: #bbbdbf;
+  padding: 20px 40px;
+  background-color: #fff;
+  margin: 0 -3px;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  -ms-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  -webkit-animation: cellOutY 0.2s 0s ease-in both;
+  -moz-animation: cellOutY 0.2s 0s ease-in both;
+  -o-animation: cellOutY 0.2s 0s ease-in both;
+  -ms-animation: cellOutY 0.2s 0s ease-in both;
+  animation: cellOutY 0.2s 0s ease-in both;
+}
+.header > .menu > .item:nth-child(1),
+.header > .menu > .item:nth-child(5) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.header > .menu > .item:nth-child(2),
+.header > .menu > .item:nth-child(4) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.header > .menu > .item:hover {
+  color: #babd56;
+}
+.header > .menu > .item.active {
+  color: #babd56;
+  text-decoration: underline;
+}
+.header > .menu > .line {
+  width: 100%;
+  height: 2px;
+  background-color: #e4e5e6;
+  margin: -38px 0 68px 0;
 }
 @-moz-keyframes fadeIn {
   from {
@@ -787,87 +905,19 @@ body {
   color: #000;
   font: 16px gotham book;
 }
-.container {
+body > .container {
   margin: auto;
   padding: 30px;
   border: 2px solid #e4e5e6;
   min-height: 100%;
   max-width: 1400px;
-  height: 3000px;
 }
-.container > .logo {
-  color: #babd56;
-  width: 348px;
-  text-align: center;
-  margin: auto;
-  padding: 0 0 60px 0;
-}
-.container > .logo > .daffodil {
-  font: 64px atc-rosemary regular;
-}
-.container > .logo > .digital {
-  font: 128px luxus-brut regular;
-  line-height: 64px;
-}
-.container > .menu {
-  text-align: center;
-}
-.container > .menu > .item {
-  display: inline-block;
-  cursor: pointer;
-  font: 24px atc-rosemary regular;
-  text-transform: uppercase;
-  color: #bbbdbf;
-  padding: 20px 40px;
-  background-color: #fff;
-  margin: 0 -3px;
-  text-decoration: none;
-  -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  -ms-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-  -webkit-animation: cellOutY 0.2s 0s ease-in both;
-  -moz-animation: cellOutY 0.2s 0s ease-in both;
-  -o-animation: cellOutY 0.2s 0s ease-in both;
-  -ms-animation: cellOutY 0.2s 0s ease-in both;
-  animation: cellOutY 0.2s 0s ease-in both;
-}
-.container > .menu > .item:nth-child(1),
-.container > .menu > .item:nth-child(5) {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.container > .menu > .item:nth-child(2),
-.container > .menu > .item:nth-child(4) {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.container > .menu > .item:hover {
-  color: #babd56;
-}
-.container > .menu > .item.active {
-  color: #babd56;
-  text-decoration: underline;
-}
-.container > .menu > .line {
-  width: 100%;
-  height: 2px;
-  background-color: #e4e5e6;
-  margin: -38px 0 68px 0;
-}
-.container > .banner {
+.home > .banner {
   position: relative;
   height: 600px;
   overflow: hidden;
 }
-.container > .banner > .inner {
+.home > .banner > .inner {
   overflow: hidden;
   height: 900px;
   margin: -150px 0 0 0;
@@ -878,7 +928,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("/img/banner.jpg");
 }
-.container > .banner > .inner > .tags {
+.home > .banner > .inner > .tags {
   width: 250px;
   height: 302px;
   background-image: url("/img/tags.png");
@@ -890,16 +940,16 @@ body {
   left: 50%;
   margin: -125px 0 0 -151px;
 }
-.container > .story {
+.home > .story {
   margin: 30px 0;
 }
-.container > .story > .section {
+.home > .story > .section {
   width: 50%;
 }
-.container > .story > .section > .inner {
+.home > .story > .section > .inner {
   padding: 20px;
 }
-.container > .story > .section.left {
+.home > .story > .section.left {
   -webkit-animation: cellInY 0.2s 0.4s ease-in both;
   -moz-animation: cellInY 0.2s 0.4s ease-in both;
   -o-animation: cellInY 0.2s 0.4s ease-in both;
@@ -908,13 +958,13 @@ body {
   float: left;
   height: 200px;
 }
-.container > .story > .section.left > .inner {
+.home > .story > .section.left > .inner {
   height: inherit;
 }
-.container > .story > .section.left > .inner > svg {
+.home > .story > .section.left > .inner > svg {
   max-height: 150px;
 }
-.container > .story > .section.right {
+.home > .story > .section.right {
   float: right;
   -webkit-animation: cellInY 0.2s 0.5s ease-in both;
   -moz-animation: cellInY 0.2s 0.5s ease-in both;
@@ -922,37 +972,37 @@ body {
   -ms-animation: cellInY 0.2s 0.5s ease-in both;
   animation: cellInY 0.2s 0.5s ease-in both;
 }
-.container > .story > .section.right > .inner {
+.home > .story > .section.right > .inner {
   border-left: 2px solid #e4e5e6;
   color: #7f7773;
   line-height: 40px;
 }
-.container > .story > .section.right > .inner > .title {
+.home > .story > .section.right > .inner > .title {
   text-transform: uppercase;
 }
-.container > .submenu {
+.home > .submenu {
   -webkit-animation: cellOutY 0.2s 0.6s ease-in both;
   -moz-animation: cellOutY 0.2s 0.6s ease-in both;
   -o-animation: cellOutY 0.2s 0.6s ease-in both;
   -ms-animation: cellOutY 0.2s 0.6s ease-in both;
   animation: cellOutY 0.2s 0.6s ease-in both;
 }
-.container > .submenu > .item {
+.home > .submenu > .item {
   width: 33.333%;
   float: left;
   text-decoration: none;
 }
-.container > .submenu > .item:nth-child(1) > .inner {
+.home > .submenu > .item:nth-child(1) > .inner {
   margin-left: 0px;
 }
-.container > .submenu > .item:nth-child(3) > .inner {
+.home > .submenu > .item:nth-child(3) > .inner {
   margin-right: 0px;
 }
-.container > .submenu > .item:hover > .inner > .copy {
+.home > .submenu > .item:hover > .inner > .copy {
   color: #babd56;
   background-color: #fff;
 }
-.container > .submenu > .item > .inner {
+.home > .submenu > .item > .inner {
   background-color: #babd56;
   margin: 20px;
   color: #fff;
@@ -961,7 +1011,7 @@ body {
   text-transform: uppercase;
   font: 24px gotham book;
 }
-.container > .submenu > .item > .inner > .copy {
+.home > .submenu > .item > .inner > .copy {
   padding: 40px 0;
   border: 1px solid #fff;
   -webkit-transition: background-color 0.1s linear, color 0.1s linear 0.1s;

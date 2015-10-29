@@ -1,56 +1,6 @@
 
-.container
 
-  margin auto
-  padding 30px
-  border: 2px solid c.grey1
-  min-height 100%
-  max-width 1400px
-  height 3000px
-
-  > .logo
-    color: c.yellow1
-    width 348px
-    text-align center
-    margin auto
-    padding 0 0 60px 0
-    > .daffodil
-      font f_h2
-    > .digital
-      font f_h1
-      line-height 64px
-
-  > .menu
-    text-align center
-    > .item
-      display inline-block
-      cursor pointer
-      font f_h3
-      text-transform uppercase
-      color: c.grey3
-      padding 20px 40px
-      background-color: c.white1
-      margin 0 -3px
-      text-decoration none
-      transition color 0.1s linear
-      animation cellOutY 0.2s 0s ease-in both
-      &:nth-child(1)
-      &:nth-child(5)
-        animation-delay 0.2s
-      &:nth-child(2)
-      &:nth-child(4)
-        animation-delay 0.1s
-      &:hover
-        color: c.yellow1
-      &.active
-        color: c.yellow1
-        text-decoration underline
-    > .line
-      width 100%
-      height 2px
-      background-color: c.grey1
-      margin -38px 0 68px 0
-
+.home
   > .banner
     position relative
     height 600px
@@ -123,7 +73,6 @@
           padding 40px 0
           border: 1px solid c.white1
           transition background-color 0.1s linear, color 0.1s linear 0.1s
-      
 // mobile
 // @media all and (min-width: 1px) and (max-width: 1000px)
 
@@ -134,5 +83,3 @@
   to
     transform translate(0, 0) rotate(0deg)
     opacity 1
-
-

@@ -32,7 +32,10 @@ html(lang='en')
     meta(name="theme-color",content="#f8ead7")
 
   body
-    block content
+    .container
+      include header
+      block content
+      include footer
 
     block script
    
@@ -40,11 +43,11 @@ html(lang='en')
 
         Loader.scripts.jst_lib.push('jquery-2.1.4.min');
         Loader.scripts.jst.push('main');
+        Loader.scripts.jst.push('spa');
+        Loader.scripts.jst.push('home');
         Loader.i( function(result) {
           if (result) {
-            if (typeof(loadercomplete) === 'function') {
-              loadercomplete();
-            }
+            Spa.i()
           }
         });
 

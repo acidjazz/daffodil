@@ -1,20 +1,7 @@
 extends inc/layout
 
 block content
-  .container
-
-    .logo
-      .daffodil DAFFODIL
-      .digital digital
-
-    .menu
-      a.item(href='#home') home
-      a.item(href='#services') services
-      a.item(href='#portfolio') portfolio
-      a.item(href='#about') about
-      a.item(href='#contact') contact
-      .line
-
+  .home
     .banner
       .inner
         .tags
@@ -27,16 +14,11 @@ block content
         .inner
           .title what we do
           .copy Daffodil Digital is a new digitla communications agency working with brands to develop strategic messages onlin.  We work with small companies who are dreaming big and big brands with a hunger to stay current.
-
     .clear
 
     .submenu
       a.item(href='#services'): .inner: .copy services
       a.item(href='#services'): .inner: .copy portfolio
       a.item(href='#services'): .inner: .copy about
+    .clear
 
-  script(type='text/javascript').
-    function loadercomplete() {
-      Loader.load('./jst/index.js', 'Index');
-      //Global.i()
-    }
