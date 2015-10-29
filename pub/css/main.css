@@ -182,10 +182,74 @@
 }
 .footer > .section.section_follow > .inner > .socials > .social {
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.1s linear 0.05s;
+  -moz-transition: background-color 0.1s linear 0.05s;
+  -o-transition: background-color 0.1s linear 0.05s;
+  -ms-transition: background-color 0.1s linear 0.05s;
+  transition: background-color 0.1s linear 0.05s;
+}
+.footer > .section.section_follow > .inner > .socials > .social:hover {
+  background-color: #7f7773;
+}
+.footer > .section.section_follow > .inner > .socials > .social:hover > svg > path,
+.footer > .section.section_follow > .inner > .socials > .social:hover > svg > g,
+.footer > .section.section_follow > .inner > .socials > .social:hover > svg > g > path {
+  fill: #fff;
+}
+.footer > .section.section_follow > .inner > .socials > .social > svg {
+  width: inherit;
+  height: inherit;
+}
+.footer > .section.section_follow > .inner > .socials > .social > svg > path,
+.footer > .section.section_follow > .inner > .socials > .social > svg > g,
+.footer > .section.section_follow > .inner > .socials > .social > svg > g > path {
+  fill: #7f7773;
+  -webkit-transition: fill 0.1s linear 0s;
+  -moz-transition: fill 0.1s linear 0s;
+  -o-transition: fill 0.1s linear 0s;
+  -ms-transition: fill 0.1s linear 0s;
+  transition: fill 0.1s linear 0s;
 }
 .footer > .section.section_note > .inner > .email {
   display: inline-block;
   margin: 20px 0 0 0;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.1s linear 0.05s;
+  -moz-transition: background-color 0.1s linear 0.05s;
+  -o-transition: background-color 0.1s linear 0.05s;
+  -ms-transition: background-color 0.1s linear 0.05s;
+  transition: background-color 0.1s linear 0.05s;
+}
+.footer > .section.section_note > .inner > .email:hover {
+  background-color: #7f7773;
+}
+.footer > .section.section_note > .inner > .email:hover > svg > path,
+.footer > .section.section_note > .inner > .email:hover > svg > g,
+.footer > .section.section_note > .inner > .email:hover > svg > g > path {
+  fill: #fff;
+}
+.footer > .section.section_note > .inner > .email > svg {
+  width: inherit;
+  height: inherit;
+}
+.footer > .section.section_note > .inner > .email > svg > path,
+.footer > .section.section_note > .inner > .email > svg > g,
+.footer > .section.section_note > .inner > .email > svg > g > path {
+  fill: #7f7773;
+  -webkit-transition: fill 0.1s linear 0s;
+  -moz-transition: fill 0.1s linear 0s;
+  -o-transition: fill 0.1s linear 0s;
+  -ms-transition: fill 0.1s linear 0s;
+  transition: fill 0.1s linear 0s;
 }
 .footer > .section.section_d > .inner > .logo {
   margin: auto;

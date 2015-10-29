@@ -2,6 +2,7 @@ var Spa;
 
 Spa = {
   i: function() {
-    return console.log('SPA initiation');
+    console.log('SPA 1nitiation');
+    return Home.i();
   }
 };

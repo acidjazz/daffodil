@@ -4,6 +4,7 @@ Home = {
   laxInterval: false,
   cache: {},
   i: function() {
+    console.log('Home.i()');
     Home.cache.banner = $('.banner > .inner');
     Home.cache.tags = $('.banner > .inner > .tags');
     Home.cache.bcoords = Home.cache.banner[0].getBoundingClientRect();
