@@ -930,6 +930,42 @@ body {
 .container > .story > .section.right > .inner > .title {
   text-transform: uppercase;
 }
+.container > .submenu {
+  background-color: #ffc0cb;
+}
+.container > .submenu > .item {
+  width: 33.333%;
+  float: left;
+  text-decoration: none;
+}
+.container > .submenu > .item:nth-child(1) > .inner {
+  margin-left: 0px;
+}
+.container > .submenu > .item:nth-child(3) > .inner {
+  margin-right: 0px;
+}
+.container > .submenu > .item:hover > .inner > .copy {
+  color: #babd56;
+  background-color: #fff;
+}
+.container > .submenu > .item > .inner {
+  background-color: #babd56;
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font: 24px gotham book;
+}
+.container > .submenu > .item > .inner > .copy {
+  padding: 40px 0;
+  border: 1px solid #fff;
+  -webkit-transition: background-color 0.1s linear, color 0.1s linear 0.1s;
+  -moz-transition: background-color 0.1s linear, color 0.1s linear 0.1s;
+  -o-transition: background-color 0.1s linear, color 0.1s linear 0.1s;
+  -ms-transition: background-color 0.1s linear, color 0.1s linear 0.1s;
+  transition: background-color 0.1s linear, color 0.1s linear 0.1s;
+}
 @-moz-keyframes tagsIn {
   from {
     -webkit-transform: translate(10px, -25px) rotate(10deg);

@@ -97,6 +97,33 @@
         line-height 40px
         > .title
           text-transform uppercase
+
+  > .submenu
+    background-color pink
+    > .item
+      width 33.333%
+      float left
+      text-decoration none
+      &:nth-child(1) > .inner
+        margin-left 0px
+      &:nth-child(3) > .inner
+        margin-right 0px
+      &:hover > .inner > .copy
+        color: c.yellow1
+        background-color: c.white1
+      > .inner
+        background-color: c.yellow1
+        margin 20px
+        color: c.white1
+        text-align center
+        padding 20px
+        text-transform uppercase
+        font f_copy2
+        > .copy
+          padding 40px 0
+          border: 1px solid c.white1
+          transition background-color 0.1s linear, color 0.1s linear 0.1s
+      
 // mobile
 // @media all and (min-width: 1px) and (max-width: 1000px)
 
