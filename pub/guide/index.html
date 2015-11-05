@@ -38,7 +38,7 @@
           <div class="daffodil">DAFFODIL</div>
           <div class="digital">digital</div>
         </div>
-        <div class="menu"><a href="#home" class="item">home</a><a href="#services" class="item">services</a><a href="#portfolio" class="item">portfolio</a><a href="#about" class="item">about</a><a href="#contact" class="item">contact</a>
+        <div class="menu"><a href="#home" class="item item_home">home</a><a href="#services" class="item item_services">services</a><a href="#portfolio" class="item item_portfolio">portfolio</a><a href="#about" class="item item_about">about</a><a href="#contact" class="item item_contact">contact</a>
           <div class="line"></div>
         </div>
       </div>
@@ -61,10 +61,14 @@
             <div class="title">Fonts</div>
             <div class="font font_f_copy">f_copy 16px gotham book</div>
             <div class="font font_f_copyi">f_copyi 16px gotham bookitalic</div>
+            <div class="font font_f_copyi">f_copyb 16px gotham bold</div>
             <div class="font font_f_copy2">f_copy2 24px gotham book</div>
+            <div class="font font_f_copy2b">f_copy2b 24px gotham bold</div>
             <div class="font font_f_h1">f_h1 128px luxus-brut regular </div>
             <div class="font font_f_h2">f_h2 64px atc-rosemary regular</div>
             <div class="font font_f_h3">f_h3 24px atc-rosemary regular</div>
+            <div class="font font_f_h4">f_h4 32px gotham book</div>
+            <div class="font font_f_h5">f_h5 32px gotham bold</div>
           </div>
           <div class="clear"></div>
         </div>
@@ -232,6 +236,7 @@
       Loader.scripts.jst_lib.push('jquery-2.1.4.min');
       Loader.scripts.jst.push('main');
       Loader.scripts.jst.push('home');
+      Loader.scripts.jst.push('services');
       Loader.scripts.jst.push('spa');
       Loader.i( function(result) {
         if (result) {

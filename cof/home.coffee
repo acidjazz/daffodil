@@ -28,4 +28,5 @@ Home =
     Home.cache.banner.css 'transform', "translate(0px, #{st/14}px)"
 
     #console.log 'paralaxxxxin', st, st/10
-
+  d: ->
+    console.log 'Home.d()'

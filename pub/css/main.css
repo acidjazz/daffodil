@@ -76,8 +76,14 @@
 .guide > .sections > .section > .font.font_f_copyi {
   font: 16px gotham bookitalic;
 }
+.guide > .sections > .section > .font.font_f_copyb {
+  font: 16px gotham bold;
+}
 .guide > .sections > .section > .font.font_f_copy2 {
   font: 24px gotham book;
+}
+.guide > .sections > .section > .font.font_f_copy2b {
+  font: 24px gotham bold;
 }
 .guide > .sections > .section > .font.font_f_h1 {
   font: 128px luxus-brut regular;
@@ -87,6 +93,12 @@
 }
 .guide > .sections > .section > .font.font_f_h3 {
   font: 24px atc-rosemary regular;
+}
+.guide > .sections > .section > .font.font_f_h4 {
+  font: 32px gotham book;
+}
+.guide > .sections > .section > .font.font_f_h5 {
+  font: 32px gotham bold;
 }
 @font-face {
   font-family: gotham blaq;
@@ -155,6 +167,7 @@
   font-style: normal;
 }
 .footer {
+  margin: 40px 0 0 0;
   border-top: 2px solid #e4e5e6;
 }
 .footer > .section {
@@ -317,7 +330,7 @@
 .header > .menu > .item:hover {
   color: #babd56;
 }
-.header > .menu > .item.active {
+.header > .menu > .item.on {
   color: #babd56;
   text-decoration: underline;
 }
@@ -976,6 +989,12 @@ body > .container {
   min-height: 100%;
   max-width: 1400px;
 }
+body > .container > .section.on {
+  display: block;
+}
+body > .container > .section.off {
+  display: none;
+}
 .home > .banner {
   position: relative;
   height: 600px;
@@ -1171,4 +1190,104 @@ body > .container {
     -ms-filter: none;
     filter: none;
   }
+}
+.services > .weares {
+  border-bottom: 2px solid #bbbdbf;
+}
+.services > .weares > .weare {
+  float: left;
+  width: 33.333%;
+}
+.services > .weares > .weare > .image {
+  position: relative;
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.services > .weares > .weare > .image.storytellers {
+  background-image: url("/img/typewriter.jpg");
+}
+.services > .weares > .weare > .image.teachers {
+  background-image: url("/img/pencils.jpg");
+}
+.services > .weares > .weare > .image.strategists {
+  background-image: url("/img/desk.jpg");
+}
+.services > .weares > .weare > .image > .copy {
+  position: absolute;
+  height: 80px;
+  top: 50%;
+  width: 100%;
+  margin-top: -40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.services > .weares > .weare > .image > .copy > .book {
+  font: 32px gotham book;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  padding: 5px 0;
+}
+.services > .weares > .weare > .image > .copy > .bold {
+  font: 32px gotham bold;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  padding: 5px 0;
+}
+.services > .weares > .weare > .desc {
+  font: 24px gotham book;
+  padding: 40px 0;
+  line-height: 40px;
+  color: #7f7773;
+}
+.services > .approach {
+  margin: 40px 0;
+  border-top: 60px solid #babd56;
+  border-left: 60px solid #babd56;
+  border-right: 60px solid #f8ead7;
+  border-bottom: 60px solid #f8ead7;
+}
+.services > .approach > .title {
+  font: 64px atc-rosemary regular;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7f7773;
+  border-bottom: 1px solid #bbbdbf;
+  padding: 60px 0 40px 0;
+  margin: 0 120px;
+}
+.services > .approach > .copy {
+  padding: 20px 80px 40px 120px;
+  font: 24px gotham book;
+  color: #7f7773;
+  line-height: 40px;
+}
+.services .detail {
+  margin: 0 60px;
+}
+.services .detail > .title {
+  font: 64px atc-rosemary regular;
+  padding: 40px 0;
+  border-top: 1px solid #bbbdbf;
+  border-bottom: 1px solid #bbbdbf;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7f7773;
+}
+.services .detail > .body > .row {
+  width: 33.333%;
+  float: left;
+}
+.services .detail > .body > .row > .title {
+  font: 16px gotham bold;
+  text-transform: uppercase;
+  padding: 40px 0 10px 0;
+  color: #7f7773;
+}
+.services .detail > .body > .row > .copy {
+  font: 16px gotham book;
+  color: #7f7773;
+  padding: 10px 0;
 }

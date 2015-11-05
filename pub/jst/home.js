@@ -19,5 +19,8 @@ Home = {
     st = $(window).scrollTop();
     Home.cache.tags.css('transform', "translate(" + (st / 20) + "px, " + (st / 10) + "px) rotate(-" + (st / 60) + "deg)");
     return Home.cache.banner.css('transform', "translate(0px, " + (st / 14) + "px)");
+  },
+  d: function() {
+    return console.log('Home.d()');
   }
 };
