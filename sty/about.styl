@@ -1,0 +1,94 @@
+
+.about
+  > .spots
+    margin 0 60px
+    > .spot
+      float left
+      margin 0 0 40px 0
+      animation cellInX 0.2s 0s ease-in both
+      for num in 1..5
+        &:nth-child({num})
+          animation-delay unit(num*0.1, 's')
+      &.photo
+        position relative
+        background-repeat no-repeat
+        background-size cover
+        background-position 50% 50%
+      &.copy
+        color: c.grey3
+        line-height 30px
+        > .text
+          padding 0 30px
+        > .link
+          padding 0 30px
+          display block
+          color: c.yellow1
+          text-decoration none
+
+      > .border
+        position absolute
+        width 100%
+        height 100%
+        border: 2px solid c.yellow2
+        top -20px
+        left -20px
+      &.photo_girls
+        width 25%
+        height 400px
+      &.copy_sarah
+        width 35%
+        height 400px
+      &.photo_sarah
+        width 40%
+        height 400px
+      &.photo_jenny
+        width 50%
+        height 300px
+      &.copy_jenny
+        width 50%
+        height 300px
+        margin 40px 0 0 0
+
+  > .story
+    margin 0 60px
+    > .title1
+      font f_h4
+      color: c.grey2
+      text-transform uppercase
+    > .title2
+      title()
+    > .copy
+      padding 20px 0 40px 0
+      color: c.grey3
+      line-height 30px
+
+  > .values
+    > .title
+      text-align center
+      color: c.grey2
+      font f_h4
+      text-transform uppercase
+    > .col
+      float left
+      &.first
+        text-align right
+        width 25%
+      &.second
+        width 50%
+      &.third
+        width 25%
+      > .daffodil
+        height 625px
+        background-repeat no-repeat
+        background-size contain
+        background-position 50% 50%
+      > .value
+        color: c.grey3
+        margin 20px 20px 30px 20px
+        > .title
+          font f_h4
+          text-transform uppercase
+          padding 0 0 10px 0
+        > .copy
+          line-height 25px
+

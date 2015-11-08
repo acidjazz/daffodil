@@ -964,6 +964,101 @@
     background-size: 250%;
   }
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #e4e5e6;
+}
+.loader.off {
+  -webkit-transform: translate(0, -20px);
+  -moz-transform: translate(0, -20px);
+  -o-transform: translate(0, -20px);
+  -ms-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+  -webkit-transition: -webkit-transform 0.2s linear 0.5s;
+  -moz-transition: -moz-transform 0.2s linear 0.5s;
+  -o-transition: -o-transform 0.2s linear 0.5s;
+  -ms-transition: -ms-transform 0.2s linear 0.5s;
+  transition: transform 0.2s linear 0.5s;
+}
+.loader.on {
+  -webkit-transform: translate(0, 0px);
+  -moz-transform: translate(0, 0px);
+  -o-transform: translate(0, 0px);
+  -ms-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+  -webkit-transition: -webkit-transform 0.5s linear 0s;
+  -moz-transition: -moz-transform 0.5s linear 0s;
+  -o-transition: -o-transform 0.5s linear 0s;
+  -ms-transition: -ms-transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s;
+}
+.loader > .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.loader > .inner > .gradient {
+  position: absolute;
+  background: -webkit-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
+  background: -moz-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
+  background: -o-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
+  background: -ms-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
+  background: linear-gradient(90deg, #e4e5e6, rgba(255,255,255,0.5));
+  width: 100%;
+  height: 100%;
+  -webkit-animation: loader-gradient 2s 0s ease-in-out infinite;
+  -moz-animation: loader-gradient 2s 0s ease-in-out infinite;
+  -o-animation: loader-gradient 2s 0s ease-in-out infinite;
+  -ms-animation: loader-gradient 2s 0s ease-in-out infinite;
+  animation: loader-gradient 2s 0s ease-in-out infinite;
+}
+.loader > .inner > .full {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #ede41f;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+  -ms-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+@-moz-keyframes loader-gradient {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes loader-gradient {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-o-keyframes loader-gradient {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes loader-gradient {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
 .clear {
   zoom: 1;
 }
@@ -1328,6 +1423,46 @@ body > .container > .main > .section.off {
   width: 50%;
   height: 300px;
   float: left;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+}
+.portfolio > .clients > .client:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.portfolio > .clients > .client:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.portfolio > .clients > .client:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.portfolio > .clients > .client:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.portfolio > .clients > .client:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .portfolio > .clients > .client > .inner {
   position: relative;
@@ -1385,98 +1520,161 @@ body > .container > .main > .section.off {
   color: #7f7773;
   padding: 0 0 10px 0;
 }
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background-color: #e4e5e6;
+.about > .spots {
+  margin: 0 60px;
 }
-.loader.off {
-  -webkit-transform: translate(0, -20px);
-  -moz-transform: translate(0, -20px);
-  -o-transform: translate(0, -20px);
-  -ms-transform: translate(0, -20px);
-  transform: translate(0, -20px);
-  -webkit-transition: -webkit-transform 0.2s linear 0.5s;
-  -moz-transition: -moz-transform 0.2s linear 0.5s;
-  -o-transition: -o-transform 0.2s linear 0.5s;
-  -ms-transition: -ms-transform 0.2s linear 0.5s;
-  transition: transform 0.2s linear 0.5s;
+.about > .spots > .spot {
+  float: left;
+  margin: 0 0 40px 0;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
 }
-.loader.on {
-  -webkit-transform: translate(0, 0px);
-  -moz-transform: translate(0, 0px);
-  -o-transform: translate(0, 0px);
-  -ms-transform: translate(0, 0px);
-  transform: translate(0, 0px);
-  -webkit-transition: -webkit-transform 0.5s linear 0s;
-  -moz-transition: -moz-transform 0.5s linear 0s;
-  -o-transition: -o-transform 0.5s linear 0s;
-  -ms-transition: -ms-transform 0.5s linear 0s;
-  transition: transform 0.5s linear 0s;
+.about > .spots > .spot:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
-.loader > .inner {
+.about > .spots > .spot:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.about > .spots > .spot:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.about > .spots > .spot:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.about > .spots > .spot:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.about > .spots > .spot.photo {
   position: relative;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.about > .spots > .spot.copy {
+  color: #bbbdbf;
+  line-height: 30px;
+}
+.about > .spots > .spot.copy > .text {
+  padding: 0 30px;
+}
+.about > .spots > .spot.copy > .link {
+  padding: 0 30px;
+  display: block;
+  color: #babd56;
+  text-decoration: none;
+}
+.about > .spots > .spot > .border {
+  position: absolute;
   width: 100%;
   height: 100%;
+  border: 2px solid #ede41f;
+  top: -20px;
+  left: -20px;
 }
-.loader > .inner > .gradient {
-  position: absolute;
-  background: -webkit-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
-  background: -moz-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
-  background: -o-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
-  background: -ms-linear-gradient(0deg, #e4e5e6, rgba(255,255,255,0.5));
-  background: linear-gradient(90deg, #e4e5e6, rgba(255,255,255,0.5));
-  width: 100%;
-  height: 100%;
-  -webkit-animation: loader-gradient 2s 0s ease-in-out infinite;
-  -moz-animation: loader-gradient 2s 0s ease-in-out infinite;
-  -o-animation: loader-gradient 2s 0s ease-in-out infinite;
-  -ms-animation: loader-gradient 2s 0s ease-in-out infinite;
-  animation: loader-gradient 2s 0s ease-in-out infinite;
+.about > .spots > .spot.photo_girls {
+  width: 25%;
+  height: 400px;
 }
-.loader > .inner > .full {
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  background-color: #ede41f;
-  -webkit-transition: width 0.2s linear;
-  -moz-transition: width 0.2s linear;
-  -o-transition: width 0.2s linear;
-  -ms-transition: width 0.2s linear;
-  transition: width 0.2s linear;
+.about > .spots > .spot.copy_sarah {
+  width: 35%;
+  height: 400px;
 }
-@-moz-keyframes loader-gradient {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
+.about > .spots > .spot.photo_sarah {
+  width: 40%;
+  height: 400px;
 }
-@-webkit-keyframes loader-gradient {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
+.about > .spots > .spot.photo_jenny {
+  width: 50%;
+  height: 300px;
 }
-@-o-keyframes loader-gradient {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
+.about > .spots > .spot.copy_jenny {
+  width: 50%;
+  height: 300px;
+  margin: 40px 0 0 0;
 }
-@keyframes loader-gradient {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
+.about > .story {
+  margin: 0 60px;
+}
+.about > .story > .title1 {
+  font: 32px gotham book;
+  color: #7f7773;
+  text-transform: uppercase;
+}
+.about > .story > .title2 {
+  font: 64px atc-rosemary regular;
+  padding: 40px 0 30px 0;
+  border-top: 1px solid #bbbdbf;
+  border-bottom: 1px solid #bbbdbf;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7f7773;
+}
+.about > .story > .copy {
+  padding: 20px 0 40px 0;
+  color: #bbbdbf;
+  line-height: 30px;
+}
+.about > .values > .title {
+  text-align: center;
+  color: #7f7773;
+  font: 32px gotham book;
+  text-transform: uppercase;
+}
+.about > .values > .col {
+  float: left;
+}
+.about > .values > .col.first {
+  text-align: right;
+  width: 25%;
+}
+.about > .values > .col.second {
+  width: 50%;
+}
+.about > .values > .col.third {
+  width: 25%;
+}
+.about > .values > .col > .daffodil {
+  height: 625px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.about > .values > .col > .value {
+  color: #bbbdbf;
+  margin: 20px 20px 30px 20px;
+}
+.about > .values > .col > .value > .title {
+  font: 32px gotham book;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+}
+.about > .values > .col > .value > .copy {
+  line-height: 25px;
 }

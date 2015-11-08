@@ -4,7 +4,8 @@ Spa = {
   sections: {
     home: 'Home',
     services: 'Services',
-    portfolio: 'Portfolio'
+    portfolio: 'Portfolio',
+    about: 'About'
   },
   i: function() {
     console.log('SPA initiation');

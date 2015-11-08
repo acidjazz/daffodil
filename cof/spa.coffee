@@ -4,6 +4,7 @@ Spa =
     home: 'Home'
     services: 'Services'
     portfolio: 'Portfolio'
+    about: 'About'
 
   i: ->
     console.log 'SPA initiation'

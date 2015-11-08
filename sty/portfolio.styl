@@ -8,6 +8,11 @@
       width 50%
       height 300px
       float left
+      animation cellInX 0.2s 0s ease-in both
+      for num in 1..5
+        &:nth-child({num})
+          animation-delay unit(num*0.1, 's')
+ 
       > .inner
         position relative
         width 80%
