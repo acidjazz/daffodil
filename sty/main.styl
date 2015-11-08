@@ -29,14 +29,18 @@ body
     min-height 100%
     max-width 1400px
 
-    > .section
-      &.on
-        display block
-      &.off
-        display none
+    > .main
+      min-height 600px
+
+      > .section
+        &.on
+          display block
+        &.off
+          display none
 // pages
 @import home
 @import services
+@import portfolio
 
 
 .loader

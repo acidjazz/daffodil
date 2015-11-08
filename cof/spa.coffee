@@ -3,6 +3,7 @@ Spa =
   sections:
     home: 'Home'
     services: 'Services'
+    portfolio: 'Portfolio'
 
   i: ->
     console.log 'SPA initiation'
@@ -75,6 +76,8 @@ Spa =
     images = []
     loaded = 0
     total = srces.length
+
+    complete true if total is 0
 
     for src, i in srces
       images[i] = new Image()

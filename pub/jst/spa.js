@@ -3,7 +3,8 @@ var Spa;
 Spa = {
   sections: {
     home: 'Home',
-    services: 'Services'
+    services: 'Services',
+    portfolio: 'Portfolio'
   },
   i: function() {
     console.log('SPA initiation');
@@ -78,6 +79,9 @@ Spa = {
     images = [];
     loaded = 0;
     total = srces.length;
+    if (total === 0) {
+      complete(true);
+    }
     results = [];
     for (i = j = 0, len = srces.length; j < len; i = ++j) {
       src = srces[i];

@@ -4,18 +4,17 @@
     > .weare
       float left
       width 33.333%
+      animation cellInX 0.2s 0s ease-in both
+      &:nth-child(2)
+        animation-delay 0.1s
+      &:nth-child(3)
+        animation-delay 0.2s
       > .image
         position relative
         height 600px
         background-position 50% 50%
         background-repeat no-repeat
         background-size cover
-        &.storytellers
-          background-image url('/img/typewriter.jpg')
-        &.teachers
-          background-image url('/img/pencils.jpg')
-        &.strategists
-          background-image url('/img/desk.jpg')
         > .copy
             position absolute
             height 80px
@@ -40,6 +39,7 @@
         color: c.grey2
 
   > .approach
+    animation cellIny 0.2s 0.3s ease-in both
     margin 40px 0
     border-top: 60px solid c.yellow1
     border-left: 60px solid c.yellow1
@@ -62,13 +62,7 @@
   .detail
     margin 0 60px
     > .title
-      font f_h2
-      padding 40px 0
-      border-top: 1px solid c.grey3
-      border-bottom: 1px solid c.grey3
-      text-transform uppercase
-      text-align center
-      color: c.grey2
+      title()
 
     > .body
       > .row
