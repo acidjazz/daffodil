@@ -351,7 +351,7 @@
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .header > .logo {
     width: auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
   }
   .header > .logo > .daffodil {
     font-size: 32px;
@@ -363,6 +363,7 @@
   .header > .menu > .item {
     padding: 10px;
     font: 16px gotham bold;
+    font-size: 12px;
   }
   .header > .menu > .line {
     margin: -19px 0 40px 0;
@@ -1714,11 +1715,15 @@ body > .container > .main > .section.off {
     padding: 20px 0 0 0;
   }
   .about > .spots {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .about > .spots > .spot {
     float: none;
     width: 100% !important;
+  }
+  .about > .spots > .spot > .border {
+    top: -10px;
+    left: -10px;
   }
   .about > .spots > .spot.copy > .text {
     padding: 0 10px;
