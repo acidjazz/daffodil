@@ -365,7 +365,7 @@
     font: 16px gotham bold;
   }
   .header > .menu > .line {
-    margin: 2px 0 20px 0;
+    margin: -19px 0 40px 0;
   }
 }
 @-moz-keyframes fadeIn {
@@ -1389,6 +1389,47 @@ body > .container > .main > .section.off {
   color: #7f7773;
   padding: 10px 0;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .services > .weares > .weare {
+    float: none;
+    width: 100%;
+  }
+  .services > .weares > .weare > .image {
+    height: 300px;
+  }
+  .services > .weares > .weare > .desc {
+    text-align: center;
+  }
+  .services > .approach {
+    border-top: 20px solid #babd56;
+    border-left: 20px solid #babd56;
+    border-right: 20px solid #f8ead7;
+    border-bottom: 20px solid #f8ead7;
+  }
+  .services > .approach > .title {
+    font-size: 32px;
+    margin: 0 20px;
+    padding: 20px 0 10px 0;
+  }
+  .services > .approach > .copy {
+    margin: 0 20px;
+    padding: 10px;
+    font: 16px gotham book;
+    line-height: 25px;
+    text-align: center;
+  }
+  .services > .detail {
+    margin: 0 20px;
+  }
+  .services > .detail > .title {
+    font-size: 32px;
+    padding: 20px 0 10px 0;
+  }
+  .services > .detail > .body > .row {
+    width: 100%;
+    float: none;
+  }
+}
 .portfolio > .clients > .title {
   font: 64px atc-rosemary regular;
   padding: 40px 0 30px 0;
@@ -1499,6 +1540,16 @@ body > .container > .main > .section.off {
   font: 16px gotham book;
   color: #7f7773;
   padding: 0 0 10px 0;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .portfolio > .clients > .title {
+    font-size: 32px;
+    padding: 20px 0 10px 0;
+  }
+  .portfolio > .clients > .client {
+    width: 100%;
+    height: 150px;
+  }
 }
 .about > .spots {
   margin: 0 60px;
@@ -1657,4 +1708,42 @@ body > .container > .main > .section.off {
 }
 .about > .values > .col > .value > .copy {
   line-height: 25px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .spots {
+    margin: 0 20px;
+  }
+  .about > .spots > .spot {
+    float: none;
+    width: 100% !important;
+  }
+  .about > .spots > .spot.copy > .text {
+    padding: 0 10px;
+    line-height: 20px;
+  }
+  .about > .spots > .spot.copy > .link {
+    padding: 0 10px;
+  }
+  .about > .spots > .spot.copy_sarah {
+    height: auto;
+  }
+  .about > .spots > .spot.copy_jenny {
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+  .about > .story {
+    margin: 0 20px;
+  }
+  .about > .story > .title2 {
+    font-size: 32px;
+    padding: 20px 0 10px 0;
+  }
+  .about > .values > .col {
+    width: 100% !important;
+    text-align: center !important;
+    float: none;
+  }
+  .about > .values > .col.second > .daffodil {
+    height: 430px;
+  }
 }
