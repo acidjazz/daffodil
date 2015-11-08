@@ -363,10 +363,15 @@
   .header > .menu > .item {
     padding: 10px;
     font: 16px gotham bold;
-    font-size: 12px;
+    font-size: 14px;
   }
   .header > .menu > .line {
     margin: -19px 0 40px 0;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 320px) {
+  .header > .menu > .item {
+    font-size: 12px;
   }
 }
 @-moz-keyframes fadeIn {
