@@ -273,6 +273,14 @@
   width: 100px;
   height: 100px;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .footer > .section {
+    width: 100%;
+  }
+  .footer > .section > .inner {
+    border: none !important;
+  }
+}
 .header > .logo {
   color: #babd56;
   width: 348px;
@@ -339,6 +347,26 @@
   height: 2px;
   background-color: #e4e5e6;
   margin: -38px 0 68px 0;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .header > .logo {
+    width: auto;
+    padding: 0 0 20px 0;
+  }
+  .header > .logo > .daffodil {
+    font-size: 32px;
+  }
+  .header > .logo > .digital {
+    font-size: 64px;
+    line-height: 35px;
+  }
+  .header > .menu > .item {
+    padding: 10px;
+    font: 16px gotham bold;
+  }
+  .header > .menu > .line {
+    margin: 2px 0 20px 0;
+  }
 }
 @-moz-keyframes fadeIn {
   from {
@@ -1093,6 +1121,15 @@ body > .container > .main > .section.on {
 body > .container > .main > .section.off {
   display: none;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  body {
+    margin: 0;
+    padding: 10px;
+  }
+  body > .container {
+    padding: 10px;
+  }
+}
 .home > .banner {
   position: relative;
   height: 600px;
@@ -1206,92 +1243,35 @@ body > .container > .main > .section.off {
   -ms-transition: background-color 0.1s linear, color 0.1s linear 0.1s;
   transition: background-color 0.1s linear, color 0.1s linear 0.1s;
 }
-@-moz-keyframes tagsIn {
-  from {
-    -webkit-transform: translate(10px, -25px) rotate(10deg);
-    -moz-transform: translate(10px, -25px) rotate(10deg);
-    -o-transform: translate(10px, -25px) rotate(10deg);
-    -ms-transform: translate(10px, -25px) rotate(10deg);
-    transform: translate(10px, -25px) rotate(10deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .home > .banner {
+    height: 300px;
   }
-  to {
-    -webkit-transform: translate(0, 0) rotate(0deg);
-    -moz-transform: translate(0, 0) rotate(0deg);
-    -o-transform: translate(0, 0) rotate(0deg);
-    -ms-transform: translate(0, 0) rotate(0deg);
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+  .home > .banner > .inner {
+    height: 500px;
   }
-}
-@-webkit-keyframes tagsIn {
-  from {
-    -webkit-transform: translate(10px, -25px) rotate(10deg);
-    -moz-transform: translate(10px, -25px) rotate(10deg);
-    -o-transform: translate(10px, -25px) rotate(10deg);
-    -ms-transform: translate(10px, -25px) rotate(10deg);
-    transform: translate(10px, -25px) rotate(10deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
+  .home > .banner > .inner > .tags {
+    width: 125px;
+    height: 151px;
+    margin: -45px 0 0 -51px;
   }
-  to {
-    -webkit-transform: translate(0, 0) rotate(0deg);
-    -moz-transform: translate(0, 0) rotate(0deg);
-    -o-transform: translate(0, 0) rotate(0deg);
-    -ms-transform: translate(0, 0) rotate(0deg);
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+  .home > .story > .section {
+    width: 100%;
   }
-}
-@-o-keyframes tagsIn {
-  from {
-    -webkit-transform: translate(10px, -25px) rotate(10deg);
-    -moz-transform: translate(10px, -25px) rotate(10deg);
-    -o-transform: translate(10px, -25px) rotate(10deg);
-    -ms-transform: translate(10px, -25px) rotate(10deg);
-    transform: translate(10px, -25px) rotate(10deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
+  .home > .story > .section.left {
+    height: 140px;
   }
-  to {
-    -webkit-transform: translate(0, 0) rotate(0deg);
-    -moz-transform: translate(0, 0) rotate(0deg);
-    -o-transform: translate(0, 0) rotate(0deg);
-    -ms-transform: translate(0, 0) rotate(0deg);
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+  .home > .story > .section.right > .inner {
+    border: none;
   }
-}
-@keyframes tagsIn {
-  from {
-    -webkit-transform: translate(10px, -25px) rotate(10deg);
-    -moz-transform: translate(10px, -25px) rotate(10deg);
-    -o-transform: translate(10px, -25px) rotate(10deg);
-    -ms-transform: translate(10px, -25px) rotate(10deg);
-    transform: translate(10px, -25px) rotate(10deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
+  .home > .submenu > .item {
+    width: 90%;
+    float: none;
+    margin: auto;
   }
-  to {
-    -webkit-transform: translate(0, 0) rotate(0deg);
-    -moz-transform: translate(0, 0) rotate(0deg);
-    -o-transform: translate(0, 0) rotate(0deg);
-    -ms-transform: translate(0, 0) rotate(0deg);
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+  .home > .submenu > .item > .inner {
+    margin: 10px !important;
+    padding: 10px;
   }
 }
 .services > .weares {

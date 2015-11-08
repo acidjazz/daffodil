@@ -19,10 +19,11 @@ Spa =
 
   handlers: ->
 
-    $('.header > .menu > a.item').click Spa.menuHandler
+    $('.header > .menu > a.item, .submenu > a.item').click Spa.menuHandler
 
   menuHandler: ->
-    Spa.menu $(this).text()
+    Spa.menu $(this).data 'section'
+    window.scrollTo 0, 0
 
   menu: (to) ->
 

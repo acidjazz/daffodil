@@ -23,7 +23,6 @@
         top 50%
         left 50%
         margin -125px 0 0 -151px
-        //animation tagsIn 0.2s linear 0s 
   > .story
     margin 30px 0
     > .section
@@ -73,13 +72,30 @@
           padding 40px 0
           border: 1px solid c.white1
           transition background-color 0.1s linear, color 0.1s linear 0.1s
-// mobile
-// @media all and (min-width: 1px) and (max-width: 1000px)
 
-@keyframes tagsIn
-  from
-    transform translate(10px, -25px) rotate(10deg)
-    opacity 0
-  to
-    transform translate(0, 0) rotate(0deg)
-    opacity 1
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .home
+    > .banner
+      height 300px
+      > .inner
+        height 500px
+        > .tags
+          width 125px
+          height 151px
+          margin -45px 0 0 -51px
+
+    > .story
+      > .section
+        width 100%
+        &.left
+          height 140px
+        &.right > .inner
+          border none
+    > .submenu
+      > .item
+        width 90%
+        float none
+        margin auto
+        > .inner
+          margin 10px !important
+          padding 10px

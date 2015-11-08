@@ -17,10 +17,11 @@ Spa = {
     }
   },
   handlers: function() {
-    return $('.header > .menu > a.item').click(Spa.menuHandler);
+    return $('.header > .menu > a.item, .submenu > a.item').click(Spa.menuHandler);
   },
   menuHandler: function() {
-    return Spa.menu($(this).text());
+    Spa.menu($(this).data('section'));
+    return window.scrollTo(0, 0);
   },
   menu: function(to) {
     var current, srces;
