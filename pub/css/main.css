@@ -1336,9 +1336,9 @@ body > .container > .main > .section.off {
   padding: 5px 0;
 }
 .services > .weares > .weare > .desc {
-  font: 24px gotham book;
-  padding: 40px 0;
-  line-height: 40px;
+  font: 16px gotham book;
+  padding: 40px 20px;
+  line-height: 30px;
   color: #7f7773;
 }
 .services > .approach {
@@ -1364,9 +1364,9 @@ body > .container > .main > .section.off {
 }
 .services > .approach > .copy {
   padding: 20px 80px 40px 120px;
-  font: 24px gotham book;
+  font: 16px gotham book;
   color: #7f7773;
-  line-height: 40px;
+  line-height: 30px;
 }
 .services .detail {
   margin: 0 60px;
