@@ -1391,11 +1391,13 @@ body > .container > .main > .section.off {
   text-transform: uppercase;
   padding: 40px 0 10px 0;
   color: #7f7773;
+  margin: 0 0 0 -16px;
 }
 .services .detail > .body > .row > .copy {
   font: 16px gotham book;
   color: #7f7773;
   padding: 10px 0;
+  line-height: 20px;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .services > .weares > .weare {
