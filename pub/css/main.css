@@ -1641,11 +1641,13 @@ body > .container > .main > .section.off {
   width: 60%;
   height: 300px;
   margin: 40px 0 0 0;
+  float: left;
 }
 .about > .spots > .spot.photo_sarah {
   width: 40%;
   height: 300px;
   background-position: 50% 15%;
+  float: right;
 }
 .about > .spots > .spot.photo_jenny {
   width: 50%;
@@ -1725,7 +1727,7 @@ body > .container > .main > .section.off {
     margin: 0 10px;
   }
   .about > .spots > .spot {
-    float: none;
+    float: none !important;
     width: 100% !important;
   }
   .about > .spots > .spot > .border {
