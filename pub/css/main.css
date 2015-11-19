@@ -1730,7 +1730,7 @@ body > .container > .main > .section.off {
     padding: 20px 0 0 0;
   }
   .about > .spots {
-    margin: 0 10px;
+    margin: 0 10px 20px 0;
   }
   .about > .spots > .spot {
     float: none !important;
@@ -1749,6 +1749,7 @@ body > .container > .main > .section.off {
   }
   .about > .spots > .spot.copy_sarah {
     height: auto;
+    margin: 0 0 40px 0;
   }
   .about > .spots > .spot.copy_jenny {
     height: auto;
