@@ -1383,6 +1383,8 @@ body > .container > .main > .section.off {
 .services .detail > .body > .row {
   width: 33.333%;
   float: left;
+  padding: 0;
+  margin: 0;
 }
 .services .detail > .body > .row > .title {
   font: 16px gotham bold;
