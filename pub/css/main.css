@@ -1359,7 +1359,7 @@ body > .container > .main > .section.off {
   text-align: center;
   color: #7f7773;
   border-bottom: 1px solid #bbbdbf;
-  padding: 60px 0 40px 0;
+  padding: 60px 0 30px 0;
   margin: 0 120px;
 }
 .services > .approach > .copy {
@@ -1635,15 +1635,17 @@ body > .container > .main > .section.off {
 }
 .about > .spots > .spot.photo_girls {
   width: 25%;
-  height: 400px;
+  height: 300px;
 }
 .about > .spots > .spot.copy_sarah {
-  width: 35%;
-  height: 400px;
+  width: 60%;
+  height: 300px;
+  margin: 40px 0 0 0;
 }
 .about > .spots > .spot.photo_sarah {
   width: 40%;
-  height: 400px;
+  height: 300px;
+  background-position: 50% 15%;
 }
 .about > .spots > .spot.photo_jenny {
   width: 50%;
