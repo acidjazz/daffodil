@@ -1267,6 +1267,9 @@ body > .container > .main > .section.off {
   .home > .story > .section.left {
     height: 140px;
   }
+  .home > .story > .section.left > .inner > svg {
+    width: 100%;
+  }
   .home > .story > .section.right > .inner {
     border: none;
   }
