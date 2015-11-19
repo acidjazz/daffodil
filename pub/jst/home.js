@@ -12,7 +12,7 @@ Home = {
     console.log('Home.i()');
     return Home.laxInterval = setInterval(function() {
       return Home.lax();
-    }, 20);
+    }, 5);
   },
   lax: function() {
     var st;

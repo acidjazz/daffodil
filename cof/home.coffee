@@ -17,7 +17,7 @@ Home =
 
     Home.laxInterval = setInterval ->
       Home.lax()
-    , 20
+    , 5
 
 
   lax: ->
