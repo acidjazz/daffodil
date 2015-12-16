@@ -1658,6 +1658,7 @@ body > .container > .main > .section.off {
 .about > .spots > .spot.photo_jenny {
   width: 50%;
   height: 300px;
+  background-position: 0% 20%;
 }
 .about > .spots > .spot.copy_jenny {
   width: 50%;
