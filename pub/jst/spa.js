@@ -89,7 +89,7 @@ Spa = {
     for (i = j = 0, len = srces.length; j < len; i = ++j) {
       src = srces[i];
       images[i] = new Image();
-      images[i].src = src.trim();
+      images[i].src = src.replace(/"/g, '').trim();
       results.push(images[i].onload = function() {
         var perc;
         loaded++;
