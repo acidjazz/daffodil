@@ -83,7 +83,7 @@ Spa =
 
     for src, i in srces
       images[i] = new Image()
-      images[i].src = src
+      images[i].src = src.trim()
       images[i].onload = ->
         loaded++
         perc = Math.round(loaded/total*100)/100
