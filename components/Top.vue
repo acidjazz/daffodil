@@ -1,18 +1,22 @@
 <template lang="pug">
-#Top
+#Top(:class="{ light: theme === 'light', dark: theme === 'dark' }")
   .container
     nav
       .left
-        .logo
+        router-link.logo(to="/")
           include ../static/vector/logo.svg
       .right
         ul.menu
-          li: router-link(to="/") home
-          li: router-link(to="/services") services
-          li: router-link(to="/portfolio") portfolio
-          li: router-link(to="/about") about
-          li: router-link(to="/contact") contact
+          li: router-link(to="/",:class="{active: $route.name === 'index'}") home
+          li: router-link(to="/services",:class="{active: $route.name === 'services'}") services
+          li: router-link(to="/portfolio",:class="{active: $route.name === 'portfolio'}") portfolio
+          li: router-link(to="/about",:class="{active: $route.name === 'about'}") about
+          li: router-link(to="/contact",:class="{active: $route.name === 'contact'}") contact
 </template>
+
+<script>
+export default { props: ['theme'], }
+</script>
 
 <style lang="stylus">
 json('../assets/colors.json')
@@ -24,11 +28,34 @@ json('../assets/fonts.json')
   width 100%
   height 500px
   z-index 10
+  .cls-1, .cls-2
+    transition fill 1s ease-in-out
+  &.light
+    .cls-1, .cls-2
+      fill white
+    li > a
+      color white
+      &.active
+        border-bottom 2px solid white
+      &:hover:not(.active)
+        background-color white
+        color celery
+  &.dark
+    .cls-1, .cls-2
+      fill celery
+    li > a
+      color celery
+      &:hover:not(.active)
+        background-color celery
+        color white
+      &.active
+        border-bottom 2px solid celery
 nav
   margin 60px 0
   > .left
     float left
     > .logo
+      display block
       width 140px
       height 72px
   > .right
@@ -37,13 +64,10 @@ nav
       > li
         float left
         > a
-          color white
           text-decoration none
           text-transform uppercase
           font c1m
-          padding 10px 15px
+          padding 10px 10px
+          margin 0 10px
           transition background-color 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0s
-          &:hover
-            background-color white
-            color celery
 </style>
