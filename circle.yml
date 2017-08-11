@@ -10,9 +10,6 @@ dependencies:
   override:
     - yarn
 
-test:
-  override:
-
 deployment:
   staging: 
     branch: staging

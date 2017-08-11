@@ -8,3 +8,6 @@ let config = {
   }
 }
 require('aeonian').config(config).deploy(process.argv[2])
+
+// AKIAJUC32CFQJKIUNVFQ
+// 2WQlgTSRFhwHP3uXaZ7OBj9xVdtXve0X6Dd0msPG
