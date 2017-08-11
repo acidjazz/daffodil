@@ -1,7 +1,7 @@
 let config = {
   bucket: {
     localDir: './dist/',
-    perfix: 'daffodil-'
+    prefix: 'daffodil-'
   },
   environments: {
     staging: 'E1AIE4JX7L06ZH'
