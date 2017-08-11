@@ -1,6 +1,6 @@
-# daffodildigital
+# Daffodil Digital
 
-> Daffodil Digital - Helping brands tell their stories in smarter ways
+> Helping brands tell their stories in smarter ways
 
 ## Build Setup
 
