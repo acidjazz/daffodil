@@ -1,3 +1,5 @@
+let colors = require('./assets/colors.json')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -8,10 +10,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Helping brands tell their stories in smarter ways' },
-      { name: "msapplication-TileColor", content: "#f7eeea" },
+      { name: "msapplication-TileColor", content: colors.energy },
       { name: "msapplication-TileImage", content: "/ico/mstile-144x144.png" },
       { name: "msapplication-config", content: "/ico/browserconfig.xml" },
-      { name: "theme-color", content: "#f8ead7" }
+      { name: "theme-color", content: colors.energy }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
@@ -35,7 +37,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: colors.energy },
   /*
   ** Build configuration
   */
