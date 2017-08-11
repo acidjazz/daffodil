@@ -69,8 +69,6 @@
           li Social Ad Metrics Reporting
         .clear
 
-
-
   Bottom
 </template>
 

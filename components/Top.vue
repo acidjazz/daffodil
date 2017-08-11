@@ -3,7 +3,7 @@
   .container
     nav
       .left
-        .logo
+        router-link.logo(to="/")
           include ../static/vector/logo.svg
       .right
         ul.menu
@@ -55,6 +55,7 @@ nav
   > .left
     float left
     > .logo
+      display block
       width 140px
       height 72px
   > .right
