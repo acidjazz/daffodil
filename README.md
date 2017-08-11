@@ -1,8 +1,22 @@
+# daffodildigital
 
+> Daffodil Digital - Helping brands tell their stories in smarter ways
 
-# Daffodil Digital
+## Build Setup
 
-Helping brands tell their stories in smarter ways
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-<img src="pub/img/logo_transparent.png" width="300" height="300" style="float: right;">
+# serve with hot reload at localhost:3000
+$ npm run dev
 
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
