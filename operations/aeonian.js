@@ -1,4 +1,4 @@
-let config = {
+require('aeonian').config({
   bucket: {
     localDir: './dist/',
     prefix: 'daffodil-'
@@ -6,5 +6,4 @@ let config = {
   environments: {
     staging: 'E1AIE4JX7L06ZH'
   }
-}
-require('aeonian').config(config).deploy(process.argv[2])
+}).deploy(process.argv[2])
