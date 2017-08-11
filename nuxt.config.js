@@ -14,6 +14,7 @@ module.exports = {
       { name: "theme-color", content: "#f8ead7" }
     ],
     link: [
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
       { rel: "apple-touch-icon", sizes: "57x57", href: "/ico/apple-touch-icon-57x57.png" },
       { rel: "apple-touch-icon", sizes: "60x60", href: "/ico/apple-touch-icon-60x60.png" },
       { rel: "apple-touch-icon", sizes: "72x72", href: "/ico/apple-touch-icon-72x72.png" },

@@ -7,11 +7,11 @@
           include ../static/vector/logo.svg
       .right
         ul.menu
-          li: a home
-          li: a services
-          li: a portfolio
-          li: a about
-          li: a contact
+          li: router-link(to="/") home
+          li: router-link(to="/services") services
+          li: router-link(to="/portfolio") portfolio
+          li: router-link(to="/about") about
+          li: router-link(to="/contact") contact
 </template>
 
 <style lang="stylus">
@@ -38,10 +38,12 @@ nav
         float left
         > a
           color white
+          text-decoration none
           text-transform uppercase
           font c1m
-          padding 0 30px 0 0
-        &:last-child > a
-          padding 0 0 0 0
-
+          padding 10px 15px
+          transition background-color 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0s
+          &:hover
+            background-color white
+            color celery
 </style>

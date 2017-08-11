@@ -1,7 +1,11 @@
 {
   "c1": "14px\\/14px 'gotham book'",
+  "c1s": "12px\\/12px 'gotham book'",
   "c1i": "14px\\/14px 'gotham bookitalic'",
   "c1b": "14px\\/14px 'gotham bold'",
   "c1m": "14px\\/14px 'gotham medium'",
-  "h1": "65px\\/80px gotham blaq"
+  "c2": "20px\\/20px 'gotham'",
+  "c2b": "20px\\/20px 'gotham bold'",
+  "h1": "65px\\/80px gotham blaq",
+  "h2": "45px\\/60px gotham bold"
 }
