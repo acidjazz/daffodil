@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "staging": "yarn generate; node operations/aeonian.js staging",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,6 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "aeonian": "^1.0.9",
     "nuxt": "^1.0.0-rc3",
     "pug": "^2.0.0-rc.3",
     "stylus": "^0.54.5",
