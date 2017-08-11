@@ -1,6 +1,6 @@
 <template lang="pug">
 #Home
-  Top
+  Top(theme="light")
   .hero
     p amplifying your brand message
   .body
@@ -10,12 +10,10 @@
         .column
           .title what we do
           .copy Daffodil Digital is a digital communications agency. We work with small companies who are dreaming big and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good co ee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
-
       .clear
       .inner
         .title why daffodil
         .copy The daffodil flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. The flower blooms in the spring, which was when we took the leap and decided to go o  on our own. The center of the flower is in the shape of a trumpet. Trumpets amplify sound, and we set out to amplify our clients' messages.
-
         .buttons
           .button: router-link(to="/services") services
           .button: router-link(to="/portfolio") portfolio
@@ -26,12 +24,7 @@
 <script>
 import Top from '~/components/Top.vue'
 import Bottom from '~/components/Bottom.vue'
-export default {
-  components: {
-    Top,
-    Bottom
-  }
-}
+export default { components: { Top, Bottom } }
 </script>
 
 <style lang="stylus">
