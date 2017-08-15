@@ -1,7 +1,7 @@
 <template lang="pug">
 #Home.page
   .hero
-    p amplifying mayo brand message
+    p amplifying your brand message
   .body
     .container
       .columns
