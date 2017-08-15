@@ -1,24 +1,23 @@
 <template lang="pug">
-#Services
-  Top(theme="dark")
-  .we
-    .container
-      .section
-        .inner
-          img(src="/services/lap.jpg")
-          .title WE ARE STORYTELLERS
-          .copy We develop the creative messaging and visuals to make your brand story memorable.
-      .section
-        .inner
-          img(src="/services/notes.jpg")
-          .title WE ARE TEACHERS
-          .copy We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
-      .section
-        .inner
-          img(src="/services/at.jpg")
-          .title WE ARE STRATEGISTS
-          .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
-      .clear
+#Services.page
+  .container
+    .section
+      .inner
+        img(src="/services/lap.jpg")
+        .title WE ARE STORYTELLERS
+        .copy We develop the creative messaging and visuals to make your brand story memorable.
+    .section
+      .inner
+        img(src="/services/notes.jpg")
+        .title WE ARE TEACHERS
+        .copy We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
+    .section
+      .inner
+        img(src="/services/at.jpg")
+        .title WE ARE STRATEGISTS
+        .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+    .clear
+  .clear
 
   .approach
     .container
@@ -73,39 +72,45 @@
 </template>
 
 <script>
-import Top from '~/components/Top.vue'
-import Bottom from '~/components/Bottom.vue'
-export default { components: { Top, Bottom } }
+import pages from '~/assets/pages.js'
+export default {
+  transition (to, from) {
+    if (!from) return 'slide-left'
+    let toi = pages.indexOf(to.name)
+    let fromi = pages.indexOf(from.name)
+    return toi > fromi ? 'slide-right' : 'slide-left'
+  }
+}
 </script>
 
 <style lang="stylus">
-json('../../assets/colors.json')
-json('../../assets/fonts.json')
-@import '../../assets/stylus/mixins.styl'
+json('../assets/colors.json')
+json('../assets/fonts.json')
+@import '../assets/stylus/mixins.styl'
 #Services
-  .we
-    margin 160px 0 30px 0
-    > .container > .section
-      float left
-      width 33.3333%
-      &:last-child > .inner
-        padding 0 0 0 0
-      > .inner
-        padding 0 20px 0 0
-        > img
-          width 100%
-          height 400px
-        > .title
-          padding 30px 0 10px 0
-          color celery
-          font c3b
-        > .copy
-          font c1s
-          line-height 20px
-          padding 0 10px 0 0
+  margin 160px 0 30px 0
+  > .container > .section
+    float left
+    width 33.3333%
+    &:last-child > .inner
+      padding 0 0 0 0
+    > .inner
+      padding 0 20px 0 0
+      > img
+        width 100%
+        height 400px
+      > .title
+        padding 30px 0 10px 0
+        color celery
+        font c3b
+      > .copy
+        font c1s
+        line-height 20px
+        padding 0 10px 0 0
   .approach
     background-color bridalHeath
     padding 60px 0
+    margin 60px 0
     > .container
       > .left, > .right
         width calc(50% - 20px)

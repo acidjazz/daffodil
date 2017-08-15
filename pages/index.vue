@@ -1,6 +1,5 @@
 <template lang="pug">
-#Home
-  Top(theme="light")
+#Home.page
   .hero
     p amplifying your brand message
   .body
@@ -18,13 +17,18 @@
           .button: router-link(to="/services") services
           .button: router-link(to="/portfolio") portfolio
           .button: router-link(to="/about") about
-  Bottom
 </template>
 
 <script>
-import Top from '~/components/Top.vue'
-import Bottom from '~/components/Bottom.vue'
-export default { components: { Top, Bottom } }
+import pages from '~/assets/pages.js'
+export default {
+  transition (to, from) {
+    if (!from) return 'slide-left'
+    let toi = pages.indexOf(to.name)
+    let fromi = pages.indexOf(from.name)
+    return toi > fromi ? 'slide-right' : 'slide-left'
+  }
+}
 </script>
 
 <style lang="stylus">

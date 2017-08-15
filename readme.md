@@ -33,6 +33,6 @@ yarn dev
 
 ## Deployment
 * All deployment is setup using the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) workflow with [aeonian](https://github.com/acidjazz/aeonian) via [Circle-CI](https://circleci.com/gh/acidjazz/waa)
- * Branch [staging](https://github.com/acidjazz/waa/tree/staging) merges deploy to http://staging.weareapartments.org/
- * Branch [master](https://github.com/acidjazz/waa/tree/master) merges deploy to http://weareapartments.org/
+ * Branch [staging](https://github.com/acidjazz/waa/tree/staging) merges deploy to http://staging.daffodildigital.com/
+ * Branch [master](https://github.com/acidjazz/waa/tree/master) merges deploy to http://daffodildigital.com/
 
