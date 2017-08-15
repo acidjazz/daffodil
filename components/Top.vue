@@ -1,5 +1,5 @@
 <template lang="pug">
-#Top(:class="{ light: theme === 'light', dark: theme === 'dark' }")
+#Top(:class="{ light: $route.name === 'index', dark: $route.name !== 'index' }")
   .container
     nav
       .left
@@ -29,7 +29,7 @@ json('../assets/fonts.json')
   height 500px
   z-index 10
   .cls-1, .cls-2
-    transition fill 1s ease-in-out
+    transition fill 2s ease-in-out
   &.light
     .cls-1, .cls-2
       fill white
@@ -38,16 +38,14 @@ json('../assets/fonts.json')
       &.active
         border-bottom 2px solid white
       &:hover:not(.active)
-        background-color white
-        color celery
+        border-bottom 2px solid rgba(white, 0.5)
   &.dark
     .cls-1, .cls-2
       fill celery
     li > a
       color celery
       &:hover:not(.active)
-        background-color celery
-        color white
+        border-bottom 2px solid rgba(celery, 0.5)
       &.active
         border-bottom 2px solid celery
 nav
@@ -69,5 +67,6 @@ nav
           font c1m
           padding 10px 10px
           margin 0 10px
-          transition background-color 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0s
+          border-bottom 2px solid rgba(red, 0)
+          transition border 0.2s ease-in-out 0.1s, color 0.3s ease-in-out 0.2s
 </style>
