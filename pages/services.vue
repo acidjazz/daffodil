@@ -19,13 +19,13 @@
     .clear
   .clear
 
-  .approach
+  .different
     .container
       .left
-        img(src="/services/smiles.jpg")
+        img(src="/services/different.jpg")
       .right
-        .title OUR APPROACH
-        .copy We are a boutique agency with the big agency experience you really want, yet the scrappiness you really need. Everything we do is driven by our passion to help brands tell their stories in more creative and thoughtful ways. Da odil Digital was born with the intention of doing things di erently. We create custom partnerships with the companies we work with and we pride ourselves on o ering killer strategic thinking, honest counsel, and one-of-a-kind industry experience.
+        .title WHY WE'RE DIFFERENT
+        .copy We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
       .clear
 
   .services
@@ -67,8 +67,10 @@
           li Social Ad Campaign Optimization & Management
           li Social Ad Metrics Reporting
         .clear
-
-  Bottom
+      .border
+      p Don’t see a service listed above? Ask us about it! We consider Da odil Digital to be a collective.
+      p We bring people together to do awesome work. If we don’t do it, we know someone who does. 
+      p We have partners that span a great deal of work outside of our core services.
 </template>
 
 <script>
@@ -107,7 +109,7 @@ json('../assets/fonts.json')
         font c1s
         line-height 20px
         padding 0 10px 0 0
-  .approach
+  .different
     background-color bridalHeath
     padding 60px 0
     margin 60px 0
@@ -149,5 +151,12 @@ json('../assets/fonts.json')
             list-style-type circle
             margin 0 0 0 14px
             padding 0 20px 6px 0
+
+      > .border
+        width 140px
+        margin 30px auto
+        border 1px solid tusk
+      > p
+        text-align center
 </style>
 

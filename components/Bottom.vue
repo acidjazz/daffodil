@@ -27,13 +27,13 @@ json('../assets/colors.json')
 json('../assets/fonts.json')
 #Bottom 
   padding 30px 0
-  background-color tapa
-  color white
+  background-color bridalHeath
+  color tapa
   > .container
     > .left
       float left
       > .address
-        color white
+        color tapa
         text-decoration none
         font c1s
         text-transform uppercase
@@ -50,7 +50,7 @@ json('../assets/fonts.json')
           margin 0 10px 0 0
           padding 2px
           border-radius 3px
-          color white
+          color tapa
           transition color 0.3s ease-in-out
           &:hover
             color energy

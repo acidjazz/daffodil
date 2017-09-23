@@ -1,7 +1,9 @@
 {
   "celery": "#B9BE5F",
   "energy": "#EEE15B",
+  "tusk": "#DDDEAF",
   "nobel": "#ABA09A",
   "tapa": "#7E7774",
-  "bridalHeath": "#FFF9F4"
+  "bridalHeath": "#FFF9F4",
+  "white": "#ffffff"
 }

@@ -26,7 +26,7 @@ json('../assets/fonts.json')
   left 0
   position fixed
   width 100%
-  height 500px
+  height 140px
   z-index 10
   .cls-1, .cls-2
     transition fill 2s ease-in-out
