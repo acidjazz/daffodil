@@ -48,8 +48,8 @@
               opacity 0
               position absolute
               fullsize()
-              top 20px
               transition opacity 0.3s ease-out
+              padding 20px
             > .image
               background-size contain
               background-repeat no-repeat
@@ -57,7 +57,7 @@
               position absolute
               padding 20px
               fullsize()
-              transition opacity 1s ease-out, transform 1s ease-out
+              transition opacity 0.6s ease-out, transform 0.6s ease-out
 </style>
 
 <script>
