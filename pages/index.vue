@@ -1,27 +1,30 @@
 <template lang="pug">
+doctype
 #Home.page
   .hero
-    p amplifying your brand message
+    p(v-in-viewport) amplifying your brand message
   .body
     .container
       .columns
-        .column helping brands tell their stories in strategic ways.
-        .column
+        .column(v-in-viewport) helping brands tell their stories in strategic ways.
+        .column(v-in-viewport)
           .title what we do
           .copy Daffodil Digital is a digital communications agency. We work with small companies who are dreaming big and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good co ee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
       .clear
       .inner
-        .title why daffodil
-        .copy The daffodil flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. The flower blooms in the spring, which was when we took the leap and decided to go o  on our own. The center of the flower is in the shape of a trumpet. Trumpets amplify sound, and we set out to amplify our clients' messages.
+        .title(v-in-viewport) why daffodil
+        .copy(v-in-viewport) The daffodil flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. The flower blooms in the spring, which was when we took the leap and decided to go o  on our own. The center of the flower is in the shape of a trumpet. Trumpets amplify sound, and we set out to amplify our clients' messages.
         .buttons
-          .button: router-link(to="/services") services
-          .button: router-link(to="/portfolio") portfolio
-          .button: router-link(to="/about") about
+          .button(v-in-viewport): router-link(to="/services") services
+          .button(v-in-viewport): router-link(to="/portfolio") portfolio
+          .button(v-in-viewport): router-link(to="/about") about
 </template>
 
 <script>
 import pages from '~/assets/pages.js'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   transition (to, from) {
     if (!from) return 'slide-left'
     let toi = pages.indexOf(to.name)
@@ -56,6 +59,7 @@ json('../assets/fonts.json')
       left 50%
       margin-top -75px
       margin-left -360px
+      inViewport(0.2)
 
   > .body
     margin 60px 0
@@ -73,11 +77,13 @@ json('../assets/fonts.json')
         text-align right
         line-height 30px
         padding 20px 30px 0 0
+        inViewport(0)
       > .column:nth-child(2)
         float left
         padding 0 0 0 30px
         border-left 1px solid celery
         width 580px
+        inViewport(0.2)
         > .title
           font c1b
           text-transform uppercase
@@ -93,10 +99,12 @@ json('../assets/fonts.json')
         text-transform uppercase
         text-align center
         padding 60px 0 30px 0
+        inViewport(0)
       > .copy
         width 640px
         margin auto
         line-height 30px
+        inViewport(0.2)
       .buttons
         margin 60px auto
         width 800px
@@ -109,6 +117,12 @@ json('../assets/fonts.json')
           height 60px
           padding 10px
           margin-right 75px
+          &:nth-child(1)
+            inViewport(0)
+          &:nth-child(2)
+            inViewport(0.1)
+          &:nth-child(3)
+            inViewport(0.2)
           &:last-child
             margin-right 0px
           &:hover > a

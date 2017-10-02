@@ -14,15 +14,27 @@ inViewport(delay)
   opacity 0
   transform translate(0, -20px)
   transition opacity 1s ease-in-out unit(delay, 's'), transform 1s ease-in-out unit(delay, 's')
+  &.below-viewport
+    opacity 0
+    transform translate(0, 20px) 
+  &.above-viewport
+    opacity 0.6
+    transform translate(0, -10px)
   &.in-viewport
     opacity 1
     transform translate(0, 0)
-  &.above-viewport
-    opacity 0
-    transform translate(0, -20px)
+
+inViewportStay(delay)
+  opacity 0
+  transition opacity 1s ease-in-out unit(delay, 's'), transform 1s ease-in-out unit(delay, 's')
   &.below-viewport
     opacity 0
-    transform translate(0, 20px)
+  &.above-viewport
+    opacity 0.6
+  &.in-viewport
+    opacity 1
+
+
 
 inViewportSide(delay)
   opacity 0
@@ -46,4 +58,3 @@ absMiddle(width, height)
   //height unit(height, px)
   margin-top unit(-(height/2), px)
   margin-left unit(-(width/2), px)
-

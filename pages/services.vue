@@ -1,81 +1,84 @@
 <template lang="pug">
+doctype
 #Services.page
   .container
-    .section
+    .section(v-in-viewport)
       .inner
         img(src="/services/lap.jpg")
-        .title WE ARE STORYTELLERS
-        .copy We develop the creative messaging and visuals to make your brand story memorable.
-    .section
+        .title.is-c3b WE ARE STORYTELLERS
+        .copy.is-c1s We develop the creative messaging and visuals to make your brand story memorable.
+    .section(v-in-viewport)
       .inner
         img(src="/services/notes.jpg")
-        .title WE ARE TEACHERS
-        .copy We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
-    .section
+        .title.is-c3b WE ARE TEACHERS
+        .copy.is-c1s We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
+    .section(v-in-viewport)
       .inner
         img(src="/services/at.jpg")
-        .title WE ARE STRATEGISTS
-        .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+        .title.is-c3b WE ARE STRATEGISTS
+        .copy.is-c1s We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
     .clear
   .clear
 
   .different
     .container
-      .left
+      .left(v-in-viewport)
         img(src="/services/different.jpg")
       .right
-        .title WHY WE'RE DIFFERENT
-        .copy We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
+        .title.is-h2(v-in-viewport) WHY WE'RE DIFFERENT
+        .copy(v-in-viewport) We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
       .clear
 
   .services
     .container
-      .title OUR SERVICES
-      .servicelist
+      .title.is-h2(v-in-viewport) OUR SERVICES
+      .servicelist(v-in-viewport)
 
         ul.service
 
-          .title STRATEGY
-          li Social Digital Content Strategy 
-          li Social Digital Launch Strategy 
-          li Event Social Media Strategy
+          .title.is-c1sb STRATEGY
+          li.is-c1s Social Digital Content Strategy 
+          li.is-c1s Social Digital Launch Strategy 
+          li.is-c1s Event Social Media Strategy
 
-          .title CONTENT & STORYTELLING
-          li Social Digital Content Development 
-          li Influencer & Ambassador Programs 
-          li Customer Story Development
-          li Copywriting
-          li Graphic Design
-
-        ul.service
-          .title COMMUNITY MANAGEMENT
-          li Community Building
-          li Social Media Customer Service
-
-          .title ANALYTICS
-          li Brand Auditing
-          li Competitive Insights
-          li Monthly Metrics Reporting
+          .title.is-c1sb CONTENT & STORYTELLING
+          li.is-c1s Social Digital Content Development 
+          li.is-c1s Influencer & Ambassador Programs 
+          li.is-c1s Customer Story Development
+          li.is-c1s Copywriting
+          li.is-c1s Graphic Design
 
         ul.service
-          .title EDUCATION
-          li Social Media 101 Trainings
-          li Digital Thought Leadership Trainings
+          .title.is-c1sb COMMUNITY MANAGEMENT
+          li.is-c1s Community Building
+          li.is-c1s Social Media Customer Service
 
-          .title ADVERTISING
-          li Social Media Ad Strategy
-          li Social Ad Campaign Optimization & Management
-          li Social Ad Metrics Reporting
+          .title.is-c1sb ANALYTICS
+          li.is-c1s Brand Auditing
+          li.is-c1s Competitive Insights
+          li.is-c1s Monthly Metrics Reporting
+
+        ul.service
+          .title.is-c1sb EDUCATION
+          li.is-c1s Social Media 101 Trainings
+          li.is-c1s Digital Thought Leadership Trainings
+
+          .title.is-c1sb ADVERTISING
+          li.is-c1s Social Media Ad Strategy
+          li.is-c1s Social Ad Campaign Optimization & Management
+          li.is-c1s Social Ad Metrics Reporting
         .clear
       .border
-      p Don’t see a service listed above? Ask us about it! We consider Da odil Digital to be a collective.
-      p We bring people together to do awesome work. If we don’t do it, we know someone who does. 
-      p We have partners that span a great deal of work outside of our core services.
+      p(v-in-viewport) Don’t see a service listed above? Ask us about it! We consider Daffodil Digital to be a collective.
+      p(v-in-viewport) We bring people together to do awesome work. If we don’t do it, we know someone who does. 
+      p(v-in-viewport) We have partners that span a great deal of work outside of our core services.
 </template>
 
 <script>
 import pages from '~/assets/pages.js'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   transition (to, from) {
     if (!from) return 'slide-left'
     let toi = pages.indexOf(to.name)
@@ -94,6 +97,12 @@ json('../assets/fonts.json')
   > .container > .section
     float left
     width 33.3333%
+    &:nth-child(1)
+      inViewport(0)
+    &:nth-child(2)
+      inViewport(0.1)
+    &:nth-child(3)
+      inViewport(0.2)
     &:last-child > .inner
       padding 0 0 0 0
     > .inner
@@ -104,9 +113,7 @@ json('../assets/fonts.json')
       > .title
         padding 30px 0 10px 0
         color celery
-        font c3b
       > .copy
-        font c1s
         line-height 20px
         padding 0 10px 0 0
   .different
@@ -119,35 +126,36 @@ json('../assets/fonts.json')
       > .left
         padding 0 20px 0 0
         float left
+        inViewport(0.2)
         > img
           width 100%
       > .right
         float right
         padding 0 0 0 20px
         > .title
-          font h2
           color celery
           padding 50px 0 20px 0
+          inViewport(0)
         > .copy
           line-height 20px
+          inViewport(0.1)
   .services
     padding 60px 0
     > .container
       > .title
-        font h2
         color celery
         text-align center
+        inViewport(0)
       > .servicelist
         width 700px
         margin auto
+        inViewport(0.1)
         > ul.service
           float left
           width 33%
           > .title
-            font c1sb
             padding 20px 0 10px 0
           > li
-            font c1s
             list-style-type circle
             margin 0 0 0 14px
             padding 0 20px 6px 0
@@ -158,5 +166,6 @@ json('../assets/fonts.json')
         border 1px solid tusk
       > p
         text-align center
+        inViewport(0)
 </style>
 

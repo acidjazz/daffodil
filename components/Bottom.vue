@@ -9,16 +9,11 @@
       .socials
         a.social.social_instagram(href="powerj")
           i.fa.fa-lg.fa-instagram
-        a.social.social_twitter(href="powerj")
-          i.fa.fa-lg.fa-twitter
-        a.social.social_facebook(href="powerj")
-          i.fa.fa-lg.fa-facebook
         a.social.social_email(href="powerj")
           i.fa.fa-lg.fa-envelope
     .center
       .d
         include ../static/vector/d.svg
-
     .clear
 </template>
 
@@ -60,5 +55,4 @@ json('../assets/fonts.json')
       > .d
         width size
         height size
-
 </style>

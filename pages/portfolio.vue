@@ -10,8 +10,14 @@
             .content
               .name.is-tapa.is-c1b {{ client.name }}
               p.is-c1s(v-for="service in client.services") {{ service }}
-
-    .clear
+  .quotes
+    .container.has-text-centered
+      .curly.s-h1.is-celery "
+      .quotelist
+        .quote 
+          .copy.is-c3 “The difference between working with Da odil Digital and other agencies is like the di erence between climbing Mount Everest with an experienced sherpa or a camp counselor — Da odils are the partners who will get you to the top.”
+          .author.is-c2b.is-uppercase cindy waters
+          .title.is-c1b.is-uppercase manager, intuit
 </template>
 
 <style lang="stylus">
@@ -58,6 +64,23 @@
               padding 20px
               fullsize()
               transition opacity 0.6s ease-out, transform 0.6s ease-out
+
+  .quotes
+    padding 60px 0
+    > .container
+      > .curly
+        font-size 100px
+        line-height 100px
+      > .quotelist
+        > .quote
+          > .copy
+            margin auto
+            max-width 600px
+            line-height 40px
+
+          > .author
+            margin 20px 0
+
 </style>
 
 <script>

@@ -15,7 +15,13 @@
 </template>
 
 <script>
-export default { props: ['theme'], }
+export default {
+
+  created () {
+    console.log(this.$route.name)
+  }
+
+}
 </script>
 
 <style lang="stylus">
@@ -40,6 +46,7 @@ json('../assets/fonts.json')
       &:hover:not(.active)
         border-bottom 2px solid rgba(white, 0.5)
   &.dark
+    background-color rgba(white, 0.96)
     .cls-1, .cls-2
       fill celery
     li > a
