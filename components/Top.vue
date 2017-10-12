@@ -54,6 +54,7 @@ json('../assets/fonts.json')
       &:hover:not(.active)
         border-bottom 2px solid rgba(celery, 0.5)
       &.active
+        color nobel
         border-bottom 2px solid celery
 nav
   margin 60px 0
