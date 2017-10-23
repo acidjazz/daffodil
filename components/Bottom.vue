@@ -55,4 +55,13 @@ json('../assets/fonts.json')
       > .d
         width size
         height size
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Bottom
+    > .container
+      > .left
+        margin-left 20px
+      > .center
+        float right
+        margin-right 20px
+
 </style>

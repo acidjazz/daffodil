@@ -167,5 +167,30 @@ json('../assets/fonts.json')
       > p
         text-align center
         inViewport(0)
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Services
+    padding 0 20px
+    > .container > .section
+      float none
+      width auto
+    > .different
+      > .container
+        > .left, > .right
+          width auto
+        > .left
+          float none
+        > .right
+          float none
+    > .services
+      > .container
+        > .servicelist
+          width auto
+          > ul.service
+            float none
+            width auto
+
+
+
 </style>
 

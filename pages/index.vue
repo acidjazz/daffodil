@@ -137,4 +137,40 @@ json('../assets/fonts.json')
             text-transform uppercase
             transition background-color 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0s
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Home
+    > .hero
+      height 100vh
+      > p
+        font h2
+        width auto
+        margin auto
+        top 240px
+        left 0
+    > .body
+      padding 0 20px
+      > .container > .columns
+        > .column:first-child
+          float none
+          width auto
+          text-align center
+          padding 0 0 40px 0
+        > .column:nth-child(2)
+          float none
+          padding 0
+          width auto
+          border-left none
+      > .container > .inner
+        > .copy
+          width auto
+        > .buttons
+          width auto
+          > .button
+            margin 20px auto
+            display block
+            &:last-child
+              margin auto
+
+
+
 </style>

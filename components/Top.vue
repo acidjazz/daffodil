@@ -14,16 +14,6 @@
           li: router-link(to="/contact",:class="{active: $route.name === 'contact'}") contact
 </template>
 
-<script>
-export default {
-
-  created () {
-    console.log(this.$route.name)
-  }
-
-}
-</script>
-
 <style lang="stylus">
 json('../assets/colors.json')
 json('../assets/fonts.json')
@@ -77,4 +67,14 @@ nav
           margin 0 10px
           border-bottom 2px solid rgba(red, 0)
           transition border 0.2s ease-in-out 0.1s, color 0.3s ease-in-out 0.2s
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Top
+    > .container
+      > nav
+        > .left
+          margin 0 0 0 20px
+        > .right
+          display none
+
 </style>
