@@ -7,9 +7,9 @@
         .line 1929 union st.
         .line san francisco ca 94103
       .socials
-        a.social.social_instagram(href="powerj")
+        a.social.social_instagram(href="https://instagram.com/daffodildigital/",target="_new")
           i.fa.fa-lg.fa-instagram
-        a.social.social_email(href="powerj")
+        a.social.social_email(href="mailto:hello@daffodildigital.com")
           i.fa.fa-lg.fa-envelope
     .center
       .d
@@ -50,8 +50,8 @@ json('../assets/fonts.json')
           &:hover
             color energy
     > .center
-      width size = 80px
-      margin auto
+      width size = 60px
+      margin 20px auto 0 auto
       > .d
         width size
         height size

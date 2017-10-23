@@ -63,6 +63,7 @@ nav
           text-decoration none
           text-transform uppercase
           font c1m
+          letter-spacing 1px
           padding 10px 10px
           margin 0 10px
           border-bottom 2px solid rgba(red, 0)

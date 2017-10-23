@@ -10,17 +10,20 @@
             .content
               .name.is-tapa.is-c1b {{ client.name }}
               p.is-c1s(v-for="service in client.services") {{ service }}
+              a.title.is-c1sb.is-celery(v-if="client.study",:href="`/portfolio/case-study/${client.study}`",target="_new") VIEW CASE STUDY
   .quotes
     .container.has-text-centered
       .curly.s-h1.is-celery "
       .quotelist
         .quote 
-          .copy.is-c3 “The difference between working with Da odil Digital and other agencies is like the di erence between climbing Mount Everest with an experienced sherpa or a camp counselor — Da odils are the partners who will get you to the top.”
+          .copy.is-c3 “The difference between working with Daffodil Digital and other agencies is like the di erence between climbing Mount Everest with an experienced sherpa or a camp counselor — Daffodils are the partners who will get you to the top.”
           .author.is-c2b.is-uppercase cindy waters
           .title.is-c1b.is-uppercase manager, intuit
 </template>
 
 <style lang="stylus">
+json('../assets/colors.json')
+json('../assets/fonts.json')
 @import '../assets/stylus/mixins.styl'
 #Portfolio
   margin 160px 0 30px 0
@@ -37,6 +40,8 @@
         > .client
           width 33.3333%
           margin auto
+          &:last-child > .inner > .image
+            background-size 50%
           &:hover
             > .inner > .image
               opacity 0
@@ -57,11 +62,10 @@
               transition opacity 0.3s ease-out
               padding 20px
             > .image
-              background-size contain
+              background-size 60%
               background-repeat no-repeat
               background-position 50% 50%
               position absolute
-              padding 20px
               fullsize()
               transition opacity 0.6s ease-out, transform 0.6s ease-out
 
@@ -96,49 +100,54 @@ export default {
     return {
       clients: [{
         name: 'INTUIT INC., QUICK BOOKS SELF-EMPLOYED',
-        image: 'Intuit_QuickBooks.png',
+        image: 'quickbooks-logo.png',
         services: [
           'Customer Story Development',
           'Social Media Content Development',
           'Influencer/Advocate Program Management',
           'Graphic Design',
         ],
+        study: 'CaseStudy_Final-03.jpg',
       }, {
         name: 'SALESFORCE DESK.COM',
-        image: 'salesforce.jpg',
+        image: 'logo-salesforce-desk_2100x1200.png',
         services: [
           'Social Media Content Strategy',
           'Community Management',
           'Social Media Metrics Program',
           'Social Media Advertising',
         ],
+        study: 'CaseStudy_Final-04.jpg',
       }, {
         name: 'TIPPING POINT',
-        image: 'TippingPointCommunity.png',
+        image: 'tippingpoint-logo_2100x1200.png',
         services: [
           'Social Digital Content Strategy',
           'Social Media Content Creation Copywriting',
           'Monthly Metrics Reporting',
         ],
+        study: 'CaseStudy_Final-01.jpg',
       }, {
         name: 'BARE SNACKS',
-        image: 'BareLogo2016.png',
+        image: 'BareLogo_2100x1200.png',
         services: [
           'Social Media Advertising Strategy',
           'Social Ad Campaign Optimization & Management',
           'Social Ads Metrics Reporting',
         ],
+        study: 'CaseStudy_Final-05.jpg',
       }, {
         name: 'INTUIT',
-        image: 'intuit_logo.png',
+        image: 'intuit_logo_2100x1200.png',
         services: [
           'Internal Social Media Trainings',
           'Social Media Content Development',
           'PR/Thought Leadership Strategy',
         ],
+        study: 'CaseStudy_Final-02.jpg',
       }, {
         name: 'SURECALL',
-        image: 'SureCall-Logo.png',
+        image: 'SureCall-Logo_2100x1200.png',
         services: [
           'Social Media Content Strategy',
           'Social Media Content Creation Copywriting',
@@ -146,7 +155,7 @@ export default {
         ],
       }, {
         name: 'FULL SUN',
-        image: 'FullSunLogo.png',
+        image: 'FullSunLogo_Updated_Blue_1200x1200.png',
         services: [
           'Social Digital Content Strategy',
           'Social Media Content Creation',
@@ -157,8 +166,3 @@ export default {
   },
 }
 </script>
-
-<style lang="stylus">
-json('../assets/colors.json')
-json('../assets/fonts.json')
-@import '../assets/stylus/mixins.styl'

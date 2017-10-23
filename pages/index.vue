@@ -2,18 +2,18 @@
 doctype
 #Home.page
   .hero
-    p(v-in-viewport) amplifying your brand message
+    p(v-in-viewport) let's start something awesome.
   .body
     .container
       .columns
         .column(v-in-viewport) helping brands tell their stories in strategic ways.
         .column(v-in-viewport)
           .title what we do
-          .copy Daffodil Digital is a digital communications agency. We work with small companies who are dreaming big and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good co ee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
+          .copy Daffodil Digital is a digital communications agency. We work with small companies who are dreaming big and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good coffee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
       .clear
       .inner
-        .title(v-in-viewport) why daffodil
-        .copy(v-in-viewport) The daffodil flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. The flower blooms in the spring, which was when we took the leap and decided to go o  on our own. The center of the flower is in the shape of a trumpet. Trumpets amplify sound, and we set out to amplify our clients' messages.
+        .title(v-in-viewport) how we work
+        .copy(v-in-viewport) We are a boutique agency with the big agency experience you really want, yet the scrappiness you really need. Everything we do is driven by our passion to help brands tell their stories in more creative and thoughtful ways. Daffodil Digital was born with the intention of doing things differently. We create custom partnerships with the companies we work with and we pride ourselves on offering killer strategic thinking, honest counsel, and one-of-a-kind industry experience.
         .buttons
           .button(v-in-viewport): router-link(to="/services") services
           .button(v-in-viewport): router-link(to="/portfolio") portfolio
@@ -53,12 +53,12 @@ json('../assets/fonts.json')
       letter-spacing 2px
       text-align center
       text-transform uppercase
-      width 720px
+      width 920px
       height 150px
       top 50%
       left 50%
       margin-top -75px
-      margin-left -360px
+      margin-left -460px
       inViewport(0.2)
 
   > .body
@@ -73,10 +73,12 @@ json('../assets/fonts.json')
         width 250px
         font c2b
         text-transform uppercase
+        letter-spacing 1px
         color celery
         text-align right
-        line-height 30px
-        padding 20px 30px 0 0
+        line-height 40px
+        padding 0 30px 0 0
+        margin-top -10px
         inViewport(0)
       > .column:nth-child(2)
         float left
@@ -89,7 +91,7 @@ json('../assets/fonts.json')
           text-transform uppercase
           padding 0 0 20px 0
         > .copy
-          line-height 20px
+          line-height 30px
 
     > .container > .inner
       text-align center
@@ -113,10 +115,11 @@ json('../assets/fonts.json')
           margin auto
           display inline-block
           background-color celery
-          width 140px
-          height 60px
+          width 120px
+          height 40px
           padding 10px
           margin-right 75px
+          letter-spacing 1px
           &:nth-child(1)
             inViewport(0)
           &:nth-child(2)
@@ -132,7 +135,7 @@ json('../assets/fonts.json')
             display block
             text-decoration none
             border 1px solid white
-            line-height 60px
+            line-height 40px
             color white
             text-transform uppercase
             transition background-color 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0s

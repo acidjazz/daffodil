@@ -11,12 +11,13 @@ doctype
       .inner
         img(src="/services/notes.jpg")
         .title.is-c3b WE ARE TEACHERS
-        .copy.is-c1s We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
+        .copy.is-c1s We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+
     .section(v-in-viewport)
       .inner
         img(src="/services/at.jpg")
         .title.is-c3b WE ARE STRATEGISTS
-        .copy.is-c1s We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+        .copy.is-c1s We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
     .clear
   .clear
 
@@ -26,7 +27,7 @@ doctype
         img(src="/services/different.jpg")
       .right
         .title.is-h2(v-in-viewport) WHY WE'RE DIFFERENT
-        .copy(v-in-viewport) We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
+        .copy(v-in-viewport) We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We're designers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
       .clear
 
   .services
@@ -40,6 +41,7 @@ doctype
           li.is-c1s Social Digital Content Strategy 
           li.is-c1s Social Digital Launch Strategy 
           li.is-c1s Event Social Media Strategy
+          li.is-c1s PR/Thought Leadership Strategy
 
           .title.is-c1sb CONTENT & STORYTELLING
           li.is-c1s Social Digital Content Development 
@@ -112,6 +114,7 @@ json('../assets/fonts.json')
         height 400px
       > .title
         padding 30px 0 10px 0
+        letter-spacing 1px
         color celery
       > .copy
         line-height 20px
@@ -134,10 +137,10 @@ json('../assets/fonts.json')
         padding 0 0 0 20px
         > .title
           color celery
-          padding 50px 0 20px 0
+          padding 30px 0 20px 0
           inViewport(0)
         > .copy
-          line-height 20px
+          line-height 30px
           inViewport(0.1)
   .services
     padding 60px 0

@@ -16,7 +16,7 @@ doctype
       .section
         .inner
           .copy.is-uppercase new business inquiries
-          a.copy(href="mailto:hello@daffodildigital.com") hello@daffodildigital.com
+          a.copy(href="mailto:dd@daffodildigital.com") dd@daffodildigital.com
           .copy.is-uppercase general & job inquiries
           a.copy(href="mailto:hello@daffodildigital.com") hello@daffodildigital.com
 
@@ -51,10 +51,13 @@ json('../assets/colors.json')
         float left
         width 33%
         > .inner
-          padding 0 30px
+          padding 0 20px
+          > .title
+            letter-spacing 1px
         &:nth-child(2)
-          line-height 20px
+          line-height 30px
         &:nth-child(3)
+          text-align right
           > .inner
             > .copy
               color tapa
@@ -67,6 +70,8 @@ json('../assets/colors.json')
   > .socialize
     padding 60px 0
     > .container
+      > .title
+        letter-spacing 2px
       > .gallery
         padding 30px 0
         > .insta
