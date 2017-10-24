@@ -36,13 +36,13 @@ doctype
       .servicelist(v-in-viewport)
 
         ul.service
-
           .title.is-c1sb STRATEGY
           li.is-c1s Social Digital Content Strategy 
           li.is-c1s Social Digital Launch Strategy 
           li.is-c1s Event Social Media Strategy
           li.is-c1s PR/Thought Leadership Strategy
 
+        ul.service
           .title.is-c1sb CONTENT & STORYTELLING
           li.is-c1s Social Digital Content Development 
           li.is-c1s Influencer & Ambassador Programs 
@@ -55,6 +55,7 @@ doctype
           li.is-c1s Community Building
           li.is-c1s Social Media Customer Service
 
+        ul.service
           .title.is-c1sb ANALYTICS
           li.is-c1s Brand Auditing
           li.is-c1s Competitive Insights
@@ -65,6 +66,7 @@ doctype
           li.is-c1s Social Media 101 Trainings
           li.is-c1s Digital Thought Leadership Trainings
 
+        ul.service
           .title.is-c1sb ADVERTISING
           li.is-c1s Social Media Ad Strategy
           li.is-c1s Social Ad Campaign Optimization & Management
@@ -156,6 +158,7 @@ json('../assets/fonts.json')
         > ul.service
           float left
           width 33%
+          height 130px
           > .title
             padding 20px 0 10px 0
           > li
@@ -192,6 +195,7 @@ json('../assets/fonts.json')
           > ul.service
             float none
             width auto
+            height auto
 
 
 
