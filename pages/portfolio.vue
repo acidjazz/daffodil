@@ -13,12 +13,18 @@
               a.title.is-c1sb.is-celery(v-if="client.study",:href="`/portfolio/case-study/${client.study}`",target="_new") VIEW CASE STUDY
   .quotes
     .container.has-text-centered
-      .curly.s-h1.is-celery "
+      .curly.s-h1.is-celery 
+        img(src="/portfolio/quote.svg")
       .quotelist
-        .quote 
-          .copy.is-c3 “The difference between working with Daffodil Digital and other agencies is like the di erence between climbing Mount Everest with an experienced sherpa or a camp counselor — Daffodils are the partners who will get you to the top.”
-          .author.is-c2b.is-uppercase cindy waters
-          .title.is-c1b.is-uppercase manager, intuit
+        .quote.quote-item(v-for="quote, index in quotes", v-if="index === current",:key="index")
+          .copy.is-c3 {{ quote.quote }}
+          .author.is-c2b.is-uppercase {{ quote.author }}
+          .position.is-c1b.is-uppercase {{ quote.position }}
+
+    .dots
+      .dot(v-for="quote, index in quotes",@click="current = index")
+        .inner.is-bg-tapa(v-if="index  === current")
+        .inner.is-bg-energy(v-else)
 </template>
 
 <style lang="stylus">
@@ -70,20 +76,35 @@ json('../assets/fonts.json')
               transition opacity 0.6s ease-out, transform 0.6s ease-out
 
   .quotes
+    > .dots
+      text-align center
+      margin 40px 0
+      > .dot
+        cursor pointer
+        display inline-block
+        border-radius 50%
+        padding 10px
+        > .inner
+          width 10px
+          height 10px
+          border-radius 50%
     padding 60px 0
     > .container
       > .curly
-        font-size 100px
-        line-height 100px
+        width 60px
+        height 60px
+        margin auto auto 40px auto
       > .quotelist
         > .quote
+          display flex
+          flex-direction column
+          height 300px
           > .copy
             margin auto
             max-width 600px
             line-height 40px
-
           > .author
-            margin 20px 0
+            margin 0 0 20px 0
 
 </style>
 
@@ -161,7 +182,26 @@ export default {
           'Social Media Content Creation',
           'Copywriting Competitive Insights',
         ]
-      }]
+      }],
+      quotes: [{
+        quote: 'The difference between working with Daffodil Digital and other agencies is like the difference between climbing Mount Everest with an experienced sherpa or a camp counselor — Daffodils are the partners who will get you to the top.',
+        author: 'Cindy Waters',
+        position: 'Manager, Intuit'
+      }, {
+        quote: 'Easy to get along with and willing to evolve with the needs of the business. Combination of scrappy "can-do" attitude with smart strategic thinking.',
+        author: 'Steve Sharpe',
+        position: 'Senior Manager of Corporate Communications, Intuit',
+      }, {
+        quote: 'I would recommend Daffodil Digital for any growing business that needs help getting their digital brand off the ground! We hired Daffodil because of our familiarity with the founders and their understanding of our brand. And we wanted the ability to get more attention using a boutique partner versus a big firm.',
+        author: 'Katy Williams',
+        position : 'Tipping Point Community',
+      }, {
+        quote: 'Solid team who gives good, sound advice on questions of all sorts and brings good work to the table.',
+        author: 'Jonathan Bacon',
+        position: 'VP of Marketing, SureCall',
+      }
+      ],
+      current: 0,
     }
   },
 }
