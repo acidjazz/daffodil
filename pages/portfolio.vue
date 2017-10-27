@@ -126,13 +126,14 @@ json('../assets/fonts.json')
     opacity 0
     transform translateX(-10px)
 
-/*
-.quote-enter
-  transform translateX(31px)
-.quote-leave-active
-  transform translateX(-31px)
-*/
-
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Portfolio
+    > .clients > .container > .clientlist > .client
+      width 100%
+    > .quotes
+      padding 0 20px
+      > .container > .quotelist > .quote
+        height 400px
 
 </style>
 

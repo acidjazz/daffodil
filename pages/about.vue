@@ -7,24 +7,24 @@ doctype
   .people
     .container
       .block.block_left(v-in-viewport)
+        .image
+          img(src="/about/sarah.jpg")
+          .lining
         .text
           .title.is-c2b.is-uppercase.is-celery the founders
           .copy.copy_sarah.is-c1s Sarah-Maeve has worked in the digital marketing industry since 2010, with a focus on social media. Before co-founding Daffodil Digital, she worked at agencies, specializing in social media and integrated digital brand strategies. She started her career in social media at VaynerMedia, and then worked as a digital strategist at The OutCast Agency. When Sarah-Maeve is not at her desk, she is likely escaping to ride horses. She might even be taking your call from atop a horse - you never know if she is on two or four feet!
           .links
             a.link.is-celery.is-c1s(href="https://www.linkedin.com/in/sarahmaevehershboyle/",target="_new") LINKEDIN
             a.link.is-celery.is-c1s(href="https://instagram.com/smhb/",target="_new") INSTAGRAM
-        .image
-          img(src="/about/sarah.jpg")
-          .lining
       .block.block_right(v-in-viewport)
+        .image
+          img(src="/about/jenny.jpg")
+          .lining
         .text
           .copy.copy_jenny.is-c1s Jenny Frank has been working in the social digital marketing space since 2006. Originally from the east coast, she worked on the sales marketing and social media teams at DailyCandy in New York City for 4 years.  Jenny then moved to the Bay Area and joined The OutCast Agency where she spent 5 years on the digital team. In her spare time, you’ll find Jenny doing pilates, seeking out her next slice of pizza, or planning the next trip with her husband. (check out #jfsjourneys on Instagram!)
           .links
             a.link.is-celery.is-c1s(href="https://www.linkedin.com/in/jennyfournierfrank/",target="_new") LINKEDIN
             a.link.is-celery.is-c1s(href="https://instagram.com/jennycandy/",target="_new") INSTAGRAM
-        .image
-          img(src="/about/jenny.jpg")
-          .lining
       .block.block_right
       .clear
 
@@ -146,6 +146,32 @@ json('../assets/colors.json')
         margin 60px auto
         > svg
           width inherit
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #About
+    > .people
+      padding 60px 20px
+    > .people > .container > .block
+      &.block_left,
+      &.block_right
+        float none
+        > .text,
+        > .image
+          > .lining
+            display none
+          float none
+          width 100%
+          padding 0
+          > .copy
+            padding 30px 0
+          > .links
+            padding 20px 0
+    > .hero
+      padding 60px 20px
+    > .hero > .container > .values
+      width 100%
+      > img
+        width inherit
 
 </style>
 

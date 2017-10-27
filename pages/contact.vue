@@ -82,9 +82,29 @@ json('../assets/colors.json')
           margin-right 30px
           &:last-child
             margin-right 0px
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Contact
+    > .drop
+      > .container
+        > .section
+          width 100%
+          &:nth-child(3)
+            text-align center
+          float none
+          text-align center
+          > .inner
+            padding 20px
+    > .socialize
+      > .container
+        > .gallery
+          > .insta
+            display block
+            margin 30px auto
+            &:last-child
+              margin 30px auto
+
 </style>
-
-
 
 <script>
 import pages from '~/assets/pages.js'
