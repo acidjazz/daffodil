@@ -16,13 +16,14 @@
       .curly.s-h1.is-celery 
         img(src="/portfolio/quote.svg")
       .quotelist
-        .quote.quote-item(v-for="quote, index in quotes", v-if="index === current",:key="index")
-          .copy.is-c3 {{ quote.quote }}
-          .author.is-c2b.is-uppercase {{ quote.author }}
-          .position.is-c1b.is-uppercase {{ quote.position }}
+        transition(name="quote",mode="out-in")
+          .quote.quote-item(v-for="quote, index in quotes", v-if="index === current",:key="index")
+            .copy.is-c3 {{ quote.quote }}
+            .author.is-c2b.is-uppercase {{ quote.author }}
+            .position.is-c1b.is-uppercase {{ quote.position }}
 
     .dots
-      .dot(v-for="quote, index in quotes",@click="current = index")
+      .dot(v-for="quote, index in quotes",@click="cquote(index)")
         .inner.is-bg-tapa(v-if="index  === current")
         .inner.is-bg-energy(v-else)
 </template>
@@ -106,6 +107,33 @@ json('../assets/fonts.json')
           > .author
             margin 0 0 20px 0
 
+
+.quote-enter-active,
+.quote-leave-active
+  transition all 0.3s
+  .copy
+    transition all 0.2s ease-in-out 0s
+  .author
+    transition all 0.2s ease-in-out 0.05s
+  .position
+    transition all 0.2s ease-in-out 0.1s
+
+.quote-enter,
+.quote-leave-active
+  .copy,
+  .author,
+  .position
+    opacity 0
+    transform translateX(-10px)
+
+/*
+.quote-enter
+  transform translateX(31px)
+.quote-leave-active
+  transform translateX(-31px)
+*/
+
+
 </style>
 
 <script>
@@ -117,8 +145,31 @@ export default {
     let fromi = pages.indexOf(from.name)
     return toi > fromi ? 'slide-right' : 'slide-left'
   },
+
+  methods: {
+    cquote (current) {
+      this.current = current
+      clearInterval(this.rotate)
+    },
+  },
+
+  mounted () {
+
+    this.rotate = setInterval(() => {
+      this.current++
+      if (this.current > (this.quotes.length - 1)) {
+        this.current = 0
+      }
+    }, 6000)
+
+  },
+
+  destroyed () {
+    clearInterval(this.rotate)
+  },
   data () {
     return {
+      rotate: false,
       clients: [{
         name: 'INTUIT INC., QUICK BOOKS SELF-EMPLOYED',
         image: 'quickbooks-logo.png',
