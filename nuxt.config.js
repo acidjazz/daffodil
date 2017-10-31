@@ -45,6 +45,9 @@ module.exports = {
   plugins: [
     {src: '~plugins/ga.js', ssr: false},
   ],
+  modules: [
+    '@nuxtjs/axios',
+  ],
   build: {
     /*
     ** Run ESLINT on save

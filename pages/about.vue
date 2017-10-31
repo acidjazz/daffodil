@@ -31,7 +31,7 @@ doctype
   .hero.is-bg-bridalHeath
     .container
       .title.is-h2.is-uppercase.is-celery.has-text-centered(v-in-viewport) our story
-      .copy(v-in-viewport) It’s pretty simple. We worked together for over two years and realized we made a darn good team. So, it may sound cliché, but we were literally just two gals sipping red wine watching a Warriors game when one said to the other: “let’s just do our own thing, you in?” And that was that. We used the code name “Project Warrior” until we were offcially Daffodil Digital. The Warriors went on to win the 2015 National Championship that year so we're pretty sure that was a good sign!
+      .copy(v-in-viewport) It’s pretty simple. We worked together for over two years and realized we made a darn good team. So, it may sound cliché, but we were literally just two gals sipping red wine watching a Warriors game, when one said to the other: “let’s just do our own thing, you in?” And, that was that. We used the code name “Project Warrior” until we were offcially Daffodil Digital. The Warriors went on to win the 2015 National Championship that year, so we're pretty sure that was a good sign!
 
   .people
     .container
@@ -59,7 +59,7 @@ doctype
   .hero.is-bg-bridalHeath
     .container
       .title.is-h2.is-uppercase.is-celery.has-text-centered(v-in-viewport) why daffodil
-      .copy(v-in-viewport) You may be wondering why we chose “Daffodil Digital”. Well, there are a few reasons... One: the flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. Two: the flower blooms in the Spring, which was when we took the leap and decided to go o  on our own. Three: the center of the flower is in the shape of a trumpet. Trumpets amplify sound, and well, we amplify brand messages. Fun Fact: we’ve since been given the nickname “The Daffodils” by clients and friends. We like it, it just fits.
+      .copy(v-in-viewport) You may be wondering why we chose “Daffodil Digital." Well, there are a few reasons... One: the flower symbolizes new beginnings, something that felt right since we were about to embark on this new business journey together. Two: the flower blooms in the Spring, which was when we decided to go out on our own. Three: the center of the flower is in the shape of a trumpet. Trumpets amplify sound, and well, we amplify brand messages. Fun Fact: we’ve since been given the nickname “The Daffodils” by clients and friends. We like it, it just fits.
 
   .hero
     .container

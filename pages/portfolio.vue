@@ -68,6 +68,7 @@ json('../assets/fonts.json')
               fullsize()
               transition opacity 0.3s ease-out
               padding 20px
+              top 25px
             > .image
               background-size 60%
               background-repeat no-repeat
@@ -244,7 +245,7 @@ export default {
         author: 'Steve Sharpe',
         position: 'Senior Manager of Corporate Communications, Intuit',
       }, {
-        quote: 'I would recommend Daffodil Digital for any growing business that needs help getting their digital brand off the ground! We hired Daffodil because of our familiarity with the founders and their understanding of our brand. And we wanted the ability to get more attention using a boutique partner versus a big firm.',
+        quote: 'I would recommend Daffodil Digital for any growing business that needs help getting their digital brand off the ground! We hired Daffodil because of our familiarity with the founders and their understanding of our brand. And, we wanted the ability to get more attention using a boutique partner versus a big firm.',
         author: 'Katy Williams',
         position : 'Tipping Point Community',
       }, {
