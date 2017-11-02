@@ -18,7 +18,7 @@
       .quotelist
         transition(name="quote",mode="out-in")
           .quote.quote-item(v-for="quote, index in quotes", v-if="index === current",:key="index")
-            .copy.is-c3 {{ quote.quote }}
+            .copy.is-c3 "{{ quote.quote }}"
             .author.is-c2b.is-uppercase {{ quote.author }}
             .position.is-c1b.is-uppercase {{ quote.position }}
 

@@ -6,18 +6,18 @@ doctype
       .inner
         img(src="/services/lap.jpg")
         .title.is-c3b WE ARE STORYTELLERS
-        .copy.is-c1s We develop the creative messaging and visuals to make your brand story memorable.
+        .copy We develop the creative messaging and visuals to make your brand story memorable.
     .section(v-in-viewport)
       .inner
         img(src="/services/notes.jpg")
         .title.is-c3b WE ARE TEACHERS
-        .copy.is-c1s We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+        .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
 
     .section(v-in-viewport)
       .inner
         img(src="/services/at.jpg")
         .title.is-c3b WE ARE STRATEGISTS
-        .copy.is-c1s We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
+        .copy We provide strategic guidance and inspire our clients to create thoughtful digital experiences driving toward their overall business goals.
     .clear
   .clear
 
@@ -119,7 +119,7 @@ json('../assets/fonts.json')
         letter-spacing 1px
         color celery
       > .copy
-        line-height 20px
+        line-height 30px
         padding 0 10px 0 0
   .different
     background-color bridalHeath
@@ -150,25 +150,28 @@ json('../assets/fonts.json')
       > .title
         color celery
         text-align center
+        margin 0 0 30px 0
         inViewport(0)
       > .servicelist
-        width 700px
+        width 760px
         margin auto
         inViewport(0.1)
         > ul.service
           float left
-          width 33%
-          height 130px
+          padding 0 20px
+          width calc(33%-60px)
+          height 220px
           > .title
             padding 20px 0 10px 0
           > li
             list-style-type circle
-            margin 0 0 0 14px
-            padding 0 20px 6px 0
+            margin 0 0 0 12px
+            padding 0 0 6px 0
+            line-height 20px
 
       > .border
         width 140px
-        margin 30px auto
+        margin -30px auto 30px auto
         border 1px solid tusk
       > p
         text-align center
