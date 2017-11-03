@@ -65,7 +65,7 @@ doctype
     .container
       .title.is-h2.is-uppercase.is-celery.has-text-centered(v-in-viewport) our values
       .values(v-in-viewport)
-        img(src="/about/values.svg")
+        img(src="/about/values.png")
 
 </template>
 <style lang="stylus">
@@ -146,7 +146,7 @@ json('../assets/colors.json')
         inViewport(0.2)
         width 800px
         margin 60px auto
-        > svg
+        > img
           width inherit
 
 @media all and (min-width: 1px) and (max-width: 1000px)
