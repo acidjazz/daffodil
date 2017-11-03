@@ -25,9 +25,67 @@ doctype
   .socialize
     .container
       .title.is-celery.is-uppercase.is-h3.has-text-centered let's socialize
-      .gallery.has-centered-text#instafeed
+      .gallery.has-centered-text
+        a(v-for="item in response.data",:href="item.link",target="_new")
+          img(:src="item.images.square.url")
 
 </template>
+
+<script>
+import Vue from 'vue'
+import pages from '~/assets/pages.js'
+import inViewportDirective from 'vue-in-viewport-directive'
+import VueJsonp from 'vue-jsonp'
+Vue.use(VueJsonp)
+export default {
+
+  directives: { 'in-viewport': inViewportDirective },
+
+  transition (to, from) {
+    if (!from) return 'slide-left'
+    let toi = pages.indexOf(to.name)
+    let fromi = pages.indexOf(from.name)
+    return toi > fromi ? 'slide-right' : 'slide-left'
+  },
+
+  created () {
+
+    const Instafeed = require('instafeed.js')
+
+    let feed = new Instafeed({
+      get: 'user',
+      userId: this.userId,
+      accessToken: this.token,
+      limit: 4,
+      sortBy: 'most-recent',
+      resoluton: 'square',
+      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+      success: (response) => {
+        this.response = response
+        response.data.forEach((e) => {
+          e.images.square = {
+            url: e.images.thumbnail.url.replace('150x150', '600x600'),
+            width: 600,
+            height: 600,
+          }
+        })
+      }
+    })
+
+    feed.run()
+  },
+
+  data () {
+    return {
+      token: '2036103420.1677ed0.e23023ba875147569736ee7f05007ece',
+      userId: 2036103420,
+      response: {},
+
+    }
+  },
+}
+
+</script>
 
 
 <style lang="stylus">
@@ -68,6 +126,8 @@ json('../assets/colors.json')
     > .container
       > .title
         letter-spacing 2px
+      > .ignore#instafeed
+        display none !important
       > .gallery
         padding 30px 0
         > a
@@ -105,55 +165,4 @@ json('../assets/colors.json')
 
 </style>
 
-<script>
-import Vue from 'vue'
-import pages from '~/assets/pages.js'
-import inViewportDirective from 'vue-in-viewport-directive'
-import VueJsonp from 'vue-jsonp'
-Vue.use(VueJsonp)
-export default {
-  directives: { 'in-viewport': inViewportDirective },
-  transition (to, from) {
-    if (!from) return 'slide-left'
-    let toi = pages.indexOf(to.name)
-    let fromi = pages.indexOf(from.name)
-    return toi > fromi ? 'slide-right' : 'slide-left'
-  },
 
-  methods: {
-    getFeed () {
-      // this.feed = (await this.$axios.get('https://www.instagram.com/daffodildigital/media/')).data
-      this.$jsonp(
-        'https://api.instagram.com/v1/users/' + this.userId + '/media/recent',
-        { access_token: this.token, count: 4 }).then(json => {
-        console.log(json)
-      }).catch(error => {
-        console.log(error)
-      })
-
-    }
-  },
-
-  mounted () {
-    const Instafeed = require('instafeed.js')
-    let feed = new Instafeed({
-      get: 'user',
-      userId: this.userId,
-      accessToken: this.token,
-      limit: 4,
-    })
-    feed.run()
-    console.log(feed)
-  },
-
-  data () {
-    return {
-      token: '2036103420.1677ed0.e23023ba875147569736ee7f05007ece',
-      userId: 2036103420,
-      sortBy: 'most-recent',
-      resolution: 'low_resolution',
-      feed: {},
-    }
-  },
-}
-</script>

@@ -3,15 +3,15 @@
   .container
     nav
       .left
-        router-link.logo(@click.native="burger = off",to="/")
+        router-link.logo(@click.native="burger = false",to="/")
           include ../static/vector/logo.svg
       .right
         ul.menu
-          li: router-link(@click.native="burger = off",to="/",:class="{active: $route.name === 'index'}") home
-          li: router-link(@click.native="burger = off",to="/services",:class="{active: $route.name === 'services'}") services
-          li: router-link(@click.native="burger = off",to="/portfolio",:class="{active: $route.name === 'portfolio'}") portfolio
-          li: router-link(@click.native="burger = off",to="/about",:class="{active: $route.name === 'about'}") about
-          li: router-link(@click.native="burger = off",to="/contact",:class="{active: $route.name === 'contact'}") contact
+          li: router-link(@click.native="burger = false",to="/",:class="{active: $route.name === 'index'}") home
+          li: router-link(@click.native="burger = false",to="/services",:class="{active: $route.name === 'services'}") services
+          li: router-link(@click.native="burger = false",to="/portfolio",:class="{active: $route.name === 'portfolio'}") portfolio
+          li: router-link(@click.native="burger = false",to="/about",:class="{active: $route.name === 'about'}") about
+          li: router-link(@click.native="burger = false",to="/contact",:class="{active: $route.name === 'contact'}") contact
   .burger(@click="burger = !burger",:class="{ on: burger }")
     .lines
       span
