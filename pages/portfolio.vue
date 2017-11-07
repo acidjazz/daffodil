@@ -180,7 +180,7 @@ export default {
     return {
       rotate: false,
       clients: [{
-        name: 'INTUIT INC., QUICK BOOKS SELF-EMPLOYED',
+        name: 'INTUIT QUICKBOOKS SELF-EMPLOYED',
         image: 'quickbooks-logo.png',
         services: [
           'Customer Story Development',
@@ -241,6 +241,7 @@ export default {
           'Social Digital Content Strategy',
           'Social Media Content Creation',
           'Copywriting Competitive Insights',
+          'Competitive Analysis',
         ]
       }],
       quotes: [{

@@ -9,7 +9,7 @@ doctype
         .column(v-in-viewport) helping brands tell their stories in smarter ways.
         .column(v-in-viewport)
           .title what we do
-          .copy Daffodil Digital is a digital communications agency. We work with small companies, who are dreaming big and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good coffee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
+          .copy Daffodil Digital is a digital communications agency. We work with small companies who are dreaming big, and big brands with a hunger to stay current. Fueled by our love for what we do every day (and good coffee!), we are here to help create, manage, and improve the digital footprint of all of our partners.
       .clear
       .inner
         .title(v-in-viewport) how we work

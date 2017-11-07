@@ -11,7 +11,7 @@ doctype
       .inner
         img(src="/services/notes.jpg")
         .title.is-c3b WE ARE TEACHERS
-        .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
+        .copy We educate our clients and provide them with the tools they need to use social media and and digital media in a more strategic way.
 
     .section(v-in-viewport)
       .inner
