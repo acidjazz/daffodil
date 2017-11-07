@@ -79,13 +79,13 @@ json('../assets/fonts.json')
         line-height 40px
         padding 0 30px 0 0
         margin-top -10px
-        inViewport(0)
+        inViewport(0.4)
       > .column:nth-child(2)
         float left
         padding 0 0 0 30px
         border-left 1px solid celery
         width 580px
-        inViewport(0.2)
+        inViewport(0.6)
         > .title
           font c1b
           text-transform uppercase

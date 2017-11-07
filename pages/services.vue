@@ -102,11 +102,11 @@ json('../assets/fonts.json')
     float left
     width 33.3333%
     &:nth-child(1)
-      inViewport(0)
+      inViewportStay(0)
     &:nth-child(2)
-      inViewport(0.1)
+      inViewportStay(0.1)
     &:nth-child(3)
-      inViewport(0.2)
+      inViewportStay(0.2)
     &:last-child > .inner
       padding 0 0 0 0
     > .inner

@@ -7,13 +7,13 @@ doctype
 
   .drop
     .container
-      .section
+      .section(v-in-viewport)
         .inner
           .title.is-h2.is-celery.is-uppercase drop us a line
-      .section
+      .section(v-in-viewport)
         .inner
           .copy Please take a minute to tell us about yourself, your project, and how you heard about us. Speed-dating style. We’re eager to get to know you.
-      .section
+      .section(v-in-viewport)
         .inner
           .copy.is-uppercase new business inquiries
           a.copy(href="mailto:dd@daffodildigital.com") dd@daffodildigital.com
@@ -24,9 +24,9 @@ doctype
 
   .socialize
     .container
-      .title.is-celery.is-uppercase.is-h3.has-text-centered let's socialize
+      .title.is-celery.is-uppercase.is-h3.has-text-centered(v-in-viewport) let's socialize
       .gallery.has-centered-text
-        a(v-for="item in response.data",:href="item.link",target="_new")
+        a(v-for="item in response.data",:href="item.link",target="_new",v-in-viewport)
           img(:src="item.images.square.url")
 
 </template>
@@ -104,6 +104,9 @@ json('../assets/colors.json')
       > .section
         float left
         width 33%
+        for i in 1..3
+          &:nth-child({i})
+            inViewport(0.1*i)
         > .inner
           padding 0 20px
           > .title
@@ -126,6 +129,7 @@ json('../assets/colors.json')
     > .container
       > .title
         letter-spacing 2px
+        inViewport(0)
       > .ignore#instafeed
         display none !important
       > .gallery
@@ -136,6 +140,9 @@ json('../assets/colors.json')
           height 200px
           background-color nobel
           margin-right 30px
+          for i in 1..4
+            &:nth-child({i})
+              inViewport(0.1*i)
           > img
             width inherit
             height inherit

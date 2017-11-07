@@ -77,7 +77,7 @@ json('../assets/colors.json')
       text-decoration none
   > .banner
     margin 160px 0 0 0
-    inViewportStay(0)
+    inViewportStay(0.1)
     > .container
       > img
         width 100%

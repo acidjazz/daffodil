@@ -2,9 +2,9 @@
 #Portfolio.page
   .clients.is-bg-bridalHeath
     .container
-      .title.is-h2.is-celery.is-uppercase.has-text-centered our clients
+      .title.is-h2.is-celery.is-uppercase.has-text-centered(v-in-viewport) our clients
       .clientlist
-        .client(v-for="client in clients")
+        .client(v-for="client in clients",v-in-viewport)
           .inner.is-bg-white.has-text-centered
             .image.is-bg-bridalHeath(:style="'background-image: url(/portfolio/' + client.image + ')'")
             .content
@@ -37,6 +37,8 @@ json('../assets/fonts.json')
   .clients
     padding 60px 0 20px 0
     > .container
+      > .title
+        inViewport(0)
       > .clientlist
         z-index 12
         text-align center
@@ -47,6 +49,9 @@ json('../assets/fonts.json')
         > .client
           width 33.3333%
           margin auto
+          for i in 1..7
+            &:nth-child({i})
+              inViewport(0.1*i)
           &:last-child > .inner > .image
             background-size 50%
           &:hover
@@ -140,7 +145,9 @@ json('../assets/fonts.json')
 
 <script>
 import pages from '~/assets/pages.js'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   transition (to, from) {
     if (!from) return 'slide-left'
     let toi = pages.indexOf(to.name)
