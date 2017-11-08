@@ -11,7 +11,7 @@ doctype
       .inner
         img(src="/services/notes.jpg")
         .title.is-c3b WE ARE TEACHERS
-        .copy We educate our clients and provide them with the tools they need to use social media and and digital media in a more strategic way.
+        .copy We educate our clients and provide them with the tools they need to use social and digital media in a more strategic way.
 
     .section(v-in-viewport)
       .inner
@@ -27,7 +27,7 @@ doctype
         img(src="/services/different.jpg")
       .right
         .title.is-h2(v-in-viewport) WHY WE'RE DIFFERENT
-        .copy(v-in-viewport) We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We're designers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social digital content programs for our partners.
+        .copy(v-in-viewport) We’re a one-stop digital shop that specializes in digital marketing, social media management, and content strategy. But, we’re not just strategists or marketers. We’re creatives. We’re copywriters. We’re analysts. We’re project managers. We're designers. We’re communicators. We believe our unique blend of skills allow us to create stronger and more thoughtful social media and digital content programs for our partners.
       .clear
 
   .services

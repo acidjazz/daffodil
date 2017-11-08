@@ -240,7 +240,7 @@ export default {
         services: [
           'Social Digital Content Strategy',
           'Social Media Content Creation',
-          'Copywriting Competitive Insights',
+          'Copywriting',
           'Competitive Analysis',
         ]
       }],
