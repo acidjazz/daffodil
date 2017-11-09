@@ -15,3 +15,7 @@ deployment:
     branch: staging
     commands:
       - yarn run staging
+  master: 
+    branch: master
+    commands:
+      - yarn run master

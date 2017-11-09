@@ -153,6 +153,9 @@ json('../assets/fonts.json')
     > .body
       padding 0 20px
       > .container > .columns
+        > .column > .title,
+        > .column > .copy
+          text-align center
         > .column:first-child
           float none
           width auto

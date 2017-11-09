@@ -183,15 +183,28 @@ json('../assets/fonts.json')
     > .container > .section
       float none
       width auto
+      > .inner
+        img
+          width 100%
+          height auto
+        > .copy
+          padding 0 0 30px 0
     > .different
+      margin 0 0 60px 0
+      padding 20px 0
       > .container
         > .left, > .right
           width auto
+          padding 20px
+          > img
+            margin auto
+            display block
         > .left
           float none
         > .right
           float none
     > .services
+      padding 0
       > .container
         > .servicelist
           width auto
@@ -199,7 +212,12 @@ json('../assets/fonts.json')
             float none
             width auto
             height auto
-
+         > .border
+           margin 30px auto
+         > p
+           max-width 200px
+           margin auto
+           padding 0 0 30px 0
 
 
 </style>

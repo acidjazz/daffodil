@@ -153,16 +153,20 @@ nav
           float none
           text-align right
           > ul
-            margin-top 90px
+            margin-top 22vh
             width inherit
             height inherit
+            height 380px
             > li
               width 200px
               float right
+              clear both
               display block
-              height 60px
-              line-height 60px
+              height 12vh
+              line-height 12vh
               opacity 0
+              > a
+                font h3
                 display block
                 transition background-color 0.2s ease-in-out 0.1s, color 0.3s ease-in-out 0.2s
                 &.active

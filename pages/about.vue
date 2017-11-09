@@ -6,12 +6,12 @@ doctype
       img(src="/about/banner.jpg")
   .people
     .container
+      .title.is-c2b.is-uppercase.is-celery the founders
       .block.block_left(v-in-viewport)
         .image
           img(src="/about/sarah.jpg")
           .lining
         .text
-          .title.is-c2b.is-uppercase.is-celery the founders
           .copy.copy_sarah Sarah-Maeve has worked in the digital marketing industry since 2010, with a focus on social media. Before co-founding Daffodil Digital, she worked at agencies, specializing in social media and integrated digital brand strategies. She started her career in social media at VaynerMedia, and then worked as a digital strategist at The OutCast Agency. When Sarah-Maeve is not at her desk, she is likely escaping to ride horses. She might even be taking your call from atop a horse - you never know if she is on two or four feet!
           .links
             a.link.is-celery(href="https://www.linkedin.com/in/sarahmaevehershboyle/",target="_new") LINKEDIN
@@ -35,24 +35,24 @@ doctype
 
   .people
     .container
+      .title.is-c2b.is-uppercase.is-celery our team
       .block.block_left(v-in-viewport)
+        .image
+          img(src="/about/mattie.jpg")
+          .lining
         .text
-          .title.is-c2b.is-uppercase.is-celery our team
           .copy.copy_sarah Mattie Mackes began her career in social and digital marketing in 2016, shortly after graduating from Chapman University in sunny Southern California. As a marketing associate, she focuses on the development and management of social media content programs for a variety of Daffodil Digital clients. In her free time, you can find Mattie out and about in the Bay Area - she’s always on the hunt for a new adventure (and a ‘grammable view)!
           .links
             a.link.is-celery(href="https://www.linkedin.com/in/mattiemackes/",target="_new") LINKEDIN
             a.link.is-celery(href="https://instagram.com/mattierose",target="_new") INSTAGRAM
-        .image
-          img(src="/about/mattie.jpg")
-          .lining
       .block.block_right(v-in-viewport)
+        .image
+          img(src="/about/mo.jpg")
+          .lining
         .text
           .copy.copy_jenny Mo is our top dog pawtner at Daffodil Digital. His role at the company spans from providing comic relief, welcomed and unwelcomed kisses, constant crumb patrol, and frequently starring in photo shoots. Mo hails from Southern California, and after years of working in the field he opted for a desk job. When Mo is not at work, you can find him exploring the parks and beaches of San Francisco. Follow his adventures on Instagram.
           .links
             a.link.is-celery(href="https://instagram.com/mo_in_sf",target="_new") INSTAGRAM
-        .image
-          img(src="/about/mo.jpg")
-          .lining
       .block.block_right
       .clear
 
@@ -84,6 +84,8 @@ json('../assets/colors.json')
   > .people
     padding 60px 0
     > .container
+      > .title
+        padding 0 0 30px 0
       > .block
         inViewport(0)
         > .text > .title
@@ -170,6 +172,9 @@ json('../assets/colors.json')
             padding 20px 0
     > .hero
       padding 60px 20px
+      &:last-child
+        padding 60px 20px 20px 20px
+
     > .hero > .container > .values
       width 100%
       > img
