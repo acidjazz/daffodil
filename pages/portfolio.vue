@@ -137,7 +137,7 @@ json('../assets/fonts.json')
     > .clients > .container > .clientlist > .client
       width 100%
     > .quotes
-      padding 0 20px
+      padding 60px 20px 0px 20px
       > .container > .quotelist > .quote
         height 400px
 

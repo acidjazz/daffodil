@@ -164,7 +164,7 @@ json('../assets/colors.json')
     > .socialize
       > .container
         > .gallery
-          > .insta
+          > a
             display block
             margin 30px auto
             &:last-child
