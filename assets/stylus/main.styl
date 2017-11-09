@@ -1,0 +1,50 @@
+@import fonts
+@import guide
+
+body, html
+  background-color white
+  font: fonts.c1
+  color: colors.tapa
+  margin 0
+  padding 0
+
+.container
+  max-width 900px
+  margin auto
+
+ul
+  margin 0
+  padding 0
+li
+  margin 0
+  padding 0
+  list-style-type none
+
+.page
+  transition all 0.5s ease
+
+.slide-left-enter,
+.slide-right-leave-active
+  opacity 0
+  transform translate(30px, 0)
+
+.slide-left-leave-active,
+.slide-right-enter
+  opacity 0
+  transform translate(-30px, 0)
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .container
+    max-width auto
+
+  .slide-left-enter,
+  .slide-right-leave-active
+    opacity 0
+    transform translate(0, 0)
+
+  .slide-left-leave-active,
+  .slide-right-enter
+    opacity 0
+    transform translate(0, 0)
+
+

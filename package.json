@@ -1,34 +1,42 @@
 {
-  "name": "daffodil_digital",
+  "name": "daffodildigital",
   "version": "1.0.0",
-  "description": "daffodildigital.com",
-  "main": "index.js",
+  "description": "Daffodil Digital - Helping brands tell their stories in smarter ways",
+  "author": "kevin olson <acidjazz@gmail.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "test": "ava",
+    "staging": "yarn generate; node operations/aeonian.js staging",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/acidjazz/daffodil"
-  },
-  "author": "Kevin Olson <acidjazz@gmail.com> (http://ke.vin.so/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/acidjazz/daffodil/issues"
-  },
-  "homepage": "https://github.com/acidjazz/daffodil",
   "dependencies": {
-    "browser-sync": "*",
-    "gulp-changed": "^1.3.0",
-    "gulp-coffee": "^2.3.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-debug": "^3.0.0",
-    "gulp-jade": "*",
-    "gulp-notify": "^2.2.0",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-stylus": "*",
-    "gulp-uglify": "^2.0.0",
-    "gulp-using": "^0.1.0",
-    "gulp-util": "^3.0.7",
-    "objectus": "latest"
+    "@nuxtjs/axios": "^4.4.0",
+    "aeonian": "^1.0.9",
+    "ava": "^0.21.0",
+    "fetch-jsonp": "^1.1.3",
+    "instafeed.js": "^1.4.1",
+    "jsonp": "^0.2.1",
+    "nuxt": "^1.0.0-rc3",
+    "pug": "^2.0.0-rc.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-in-viewport-directive": "^1.1.4",
+    "vue-jsonp": "^0.1.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
