@@ -3,7 +3,7 @@ let colors = require('./assets/colors.json')
 let config = {
   title: 'Daffodil Digital',
   description: 'A social media marketing agency helping brands tell their stories in smarter ways',
-  url: 'http://www.daffodildigital.com',
+  url: 'https://daffodildigital.com',
   image: '/share.jpg',
   keywords: 'social media, digital marketing, public relations'
 }
@@ -13,11 +13,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Daffodil Digital',
+    title: config.title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Helping brands tell their stories in smarter ways' },
+      { hid: 'description', name: 'description', content: config.description },
+      { hid: 'keywords', name: 'keywords', content: config.keywords },
       { name: "msapplication-TileColor", content: colors.energy },
       { name: "msapplication-TileImage", content: "/ico/mstile-144x144.png" },
       { name: "msapplication-config", content: "/ico/browserconfig.xml" },
