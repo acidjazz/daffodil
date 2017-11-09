@@ -3,7 +3,7 @@ let colors = require('./assets/colors.json')
 let config = {
   title: 'Daffodil Digital',
   description: 'A social media marketing agency helping brands tell their stories in smarter ways',
-  url: 'https://daffodildigital.com',
+  url: 'https://www.daffodildigital.com',
   image: '/share.jpg',
   keywords: 'social media, digital marketing, public relations'
 }
