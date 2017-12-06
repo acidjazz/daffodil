@@ -1,7 +1,8 @@
 # Daffodil Digital
 
-
-<img src="static/logo.jpeg" width="300" height="300" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/acidjazz/daffodil/master/media/daffodil.gif" alt="Daffodil GIF"/>
+</p>
 
 > Helping brands tell their stories in smarter ways
 
