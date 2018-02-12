@@ -64,7 +64,7 @@ export default {
         this.response = response
         response.data.forEach((e) => {
           e.images.square = {
-            url: e.images.thumbnail.url.replace('150x150', '600x600'),
+            url: e.images.thumbnail.url.replace(/vp.*\/.{32}\/.{8}\//, '').replace('150x150', '600x600'),
             width: 600,
             height: 600,
           }
