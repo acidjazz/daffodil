@@ -31,7 +31,7 @@ doctype
   .hero.is-bg-bridalHeath
     .container
       .title.is-h2.is-uppercase.is-celery.has-text-centered(v-in-viewport) our story
-      .copy(v-in-viewport) It’s pretty simple. We worked together for over two years and realized we made a darn good team. So, it may sound cliché, but we were literally just two gals sipping red wine watching a Warriors game, when one said to the other: “let’s just do our own thing, you in?” And, that was that. We used the code name “Project Warrior” until we were offcially Daffodil Digital. The Warriors went on to win the 2015 National Championship that year, so we're pretty sure that was a good sign!
+      .copy(v-in-viewport) It’s pretty simple. We worked together for over two years and realized we made a darn good team. So, it may sound cliché, but we were literally just two gals sipping red wine watching a Warriors game, when one said to the other: “let’s just do our own thing, you in?” And, that was that. We used the code name “Project Warrior” until we were officially Daffodil Digital. The Warriors went on to win the 2015 National Championship that year, so we're pretty sure that was a good sign!
 
   .people
     .container
@@ -50,7 +50,7 @@ doctype
           img(src="/about/mo.jpg")
           .lining
         .text
-          .copy.copy_jenny Mo is our top dog pawtner at Daffodil Digital. His role at the company spans from providing comic relief, welcomed and unwelcomed kisses, constant crumb patrol, and frequently starring in photo shoots. Mo hails from Southern California, and after years of working in the field he opted for a desk job. When Mo is not at work, you can find him exploring the parks and beaches of San Francisco. Follow his adventures on Instagram.
+          .copy.copy_jenny Mo is our top dog partner at Daffodil Digital. His role at the company spans from providing comic relief, welcomed and un-welcomed kisses, constant crumb patrol, and frequently starring in photo shoots. Mo hails from Southern California, and after years of working in the field he opted for a desk job. When Mo is not at work, you can find him exploring the parks and beaches of San Francisco. Follow his adventures on Instagram.
           .links
             a.link.is-celery(href="https://instagram.com/mo_in_sf",target="_new") INSTAGRAM
       .block.block_right
@@ -130,7 +130,7 @@ json('../assets/colors.json')
           > .lining
             position absolute
             fullsize()
-            border: 1px solid celery 
+            border: 1px solid celery
             transform translate(20px, 20px)
 
   > .hero
