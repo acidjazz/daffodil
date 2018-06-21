@@ -50,7 +50,7 @@ doctype
           img(src="/about/mo.jpg")
           .lining
         .text
-          .copy.copy_jenny Mo is our top dog partner at Daffodil Digital. His role at the company spans from providing comic relief, welcomed and un-welcomed kisses, constant crumb patrol, and frequently starring in photo shoots. Mo hails from Southern California, and after years of working in the field he opted for a desk job. When Mo is not at work, you can find him exploring the parks and beaches of San Francisco. Follow his adventures on Instagram.
+          .copy.copy_jenny Mo is our top dog pawtner at Daffodil Digital. His role at the company spans from providing comic relief, welcomed and un-welcomed kisses, constant crumb patrol, and frequently starring in photo shoots. Mo hails from Southern California, and after years of working in the field he opted for a desk job. When Mo is not at work, you can find him exploring the parks and beaches of San Francisco. Follow his adventures on Instagram.
           .links
             a.link.is-celery(href="https://instagram.com/mo_in_sf",target="_new") INSTAGRAM
       .block.block_right
