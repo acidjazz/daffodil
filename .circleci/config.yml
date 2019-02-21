@@ -5,7 +5,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.7.0-browsers
-      
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -29,14 +29,14 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ arch}}-{{ .Branch }}-{{ checksum "package.json" }}
-        
+
       # run tests!
       - run: yarn test
 
       - deploy:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              yarn run production
+              yarn run master
             fi
             if [ "${CIRCLE_BRANCH}" == "staging" ]; then
               yarn run staging
