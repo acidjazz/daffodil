@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "test": "ava",
+    "test": "true",
     "staging": "yarn generate; node operations/aeonian.js staging",
     "master": "yarn generate; node operations/aeonian.js master",
     "build": "nuxt build",
