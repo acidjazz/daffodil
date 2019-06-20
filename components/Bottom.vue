@@ -2,9 +2,9 @@
 #Bottom
   .container
     .left
-      a.address(href="https://goo.gl/maps/oqrsiE51KfF2",target="_new")
+      a.address(href="https://goo.gl/maps/ZzjLEfnwupMqod2p7",target="_new")
         .line daffodil digital
-        .line 1929 union st.
+        .line 414 francisco St.
         .line san francisco ca 94123
       .socials
         a.social.social_instagram(href="https://instagram.com/daffodildigital/",target="_new")
@@ -20,7 +20,7 @@
 <style lang="stylus">
 json('../assets/colors.json')
 json('../assets/fonts.json')
-#Bottom 
+#Bottom
   padding 30px 0
   background-color bridalHeath
   color tapa

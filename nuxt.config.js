@@ -77,7 +77,6 @@ module.exports = {
     {src: '~plugins/ga.js', ssr: false},
   ],
   modules: [
-    '@nuxtjs/axios',
     '@nuxtjs/google-analytics'
   ],
   'google-analytics': {
@@ -88,14 +87,6 @@ module.exports = {
     ** Run ESLINT on save
     */
     extend (config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
     }
   }
 }
