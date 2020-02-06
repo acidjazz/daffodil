@@ -13,7 +13,7 @@
               a.title.is-c1sb.is-celery(v-if="client.study",:href="`/portfolio/case-study/${client.study}`",target="_new") VIEW CASE STUDY
   .quotes
     .container.has-text-centered
-      .curly.s-h1.is-celery 
+      .curly.s-h1.is-celery
         img(src="/portfolio/quote.svg")
       .quotelist
         transition(name="quote",mode="out-in")
@@ -49,7 +49,7 @@ json('../assets/fonts.json')
         > .client
           width 33.3333%
           margin auto
-          for i in 1..7
+          for i in 1..11
             &:nth-child({i})
               inViewport(0.1*i)
           &:last-child > .inner > .image
@@ -242,6 +242,35 @@ export default {
           'Social Media Content Creation',
           'Copywriting',
           'Competitive Analysis',
+        ]
+      },
+      {
+        name: 'EMTRAIN',
+        image: 'emtrain.jpg',
+        services: [
+          'Social Media Strategy',
+          'Editorial Content Development',
+          'Strategic Consulting',
+        ]
+      },
+      {
+        name: 'CALLIDAE',
+        image: 'callidae.jpg',
+        services: [
+          'Social Media Strategy',
+          'Content Library Development',
+          'Strategic Consulting',
+          'Digital Advertising',
+          'SEO',
+        ]
+      },
+      {
+        name: 'MNT STUDIO',
+        image: 'MNT.jpg',
+        services: [
+          'Marketing Flyer Copywriting ',
+          'Biography Writing and Development',
+          'Website Copy',
         ]
       }],
       quotes: [{

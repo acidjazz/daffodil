@@ -64,13 +64,17 @@ export default {
         this.response = response
         response.data.forEach((e) => {
           e.images.square = {
-            url: e.images.thumbnail.url.replace('150x150', '600x600'),
+            url: e.images.thumbnail.url,
+            // url: e.images.thumbnail.url.replace(/vp.*\/.{32}\/.{8}\//, '').replace('150x150', '600x600'),
             width: 600,
             height: 600,
           }
         })
       }
     })
+
+    // https://scontent.cdninstagram.com/vp/bd7576f70cb809f98191bf83774323be/5B3BC91F/t51.2885-15/s150x150/e35/c0.113.904.904/29417459_1651910374916191_8784908356138565632_n.jpg
+    // https://scontent.cdninstagram.com/vp/f6a4670b28854b8c4ba91e2c1f44a4d1/5B7487DA/t51.2885-15/s150x150/e35/c0.135.1080.1080/29087239_402626180202660_1979983509753692160_n.jpg
 
     feed.run()
   },
