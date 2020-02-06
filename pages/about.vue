@@ -33,7 +33,7 @@ doctype
       .title.is-h2.is-uppercase.is-celery.has-text-centered(v-in-viewport) our story
       .copy(v-in-viewport) It’s pretty simple. We worked together for over two years and realized we made a darn good team. So, it may sound cliché, but we were literally just two gals sipping red wine watching a Warriors game, when one said to the other: “let’s just do our own thing, you in?” And, that was that. We used the code name “Project Warrior” until we were officially Daffodil Digital. The Warriors went on to win the 2015 National Championship that year, so we're pretty sure that was a good sign!
 
-  .people
+  //.people
     .container
       .title.is-c2b.is-uppercase.is-celery our team
       .block.block_left(v-in-viewport)
